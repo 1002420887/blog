@@ -1,0 +1,71 @@
+
+
+{:include file="../Public/head.html"}
+<style type="text/css">label{cursor: pointer;}</style>
+<!--/meta 作为公共模版分离出去-->
+<title>添加用户 - H-ui.admin v2.3</title>
+<meta name="keywords" content="SimePHP 框架">
+<meta name="description" content="SimePHP auth">
+</head>
+<body>
+<article class="page-container">
+	<form class="form form-horizontal ajaxUpload" id="form-admin-add">
+		<!-- hidden -->
+		<input type="hidden" name="id" value="{:$id}" />
+		<!-- hidden end -->
+
+		<table class="table table-border table-bordered table-bg">
+			<thead>
+				<tr>
+					<th scope="col" colspan="2">{:$title} 设置权限</th>
+				</tr>
+				<tr class="text-l">
+					<th>目录</th>
+					<th>权限</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+				{:foreach from=$list item=v}
+					<tr class="text-l">
+						<td>
+							{:$v.nbsp}|-{:$v.title}
+						</td>
+						<td>{:SETAUTH p=$v.id r=$rules}</td>
+					</tr>
+				{:/foreach}
+			</tbody>
+		</table>
+		
+		<div class="row cl">
+			<div class="col-xs-8 col-xs-offset-4 col-sm-offset-3 text-r">
+				<input class="btn btn-primary radius" id="subData" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+			</div>
+		</div>
+	</form>
+</article>
+
+<!--_footer 作为公共模版分离出去--> 
+{:include file="../Public/pubjs.html"}
+<!--/_footer /作为公共模版分离出去--> 
+{:include file="../Public/addpubjs.html"}
+<!--请在下方写此页面业务相关的脚本--> 
+<script type="text/javascript">
+
+//验证 调用提交
+$("#form-admin-add").validate({
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(){
+			$.fn.upData({
+				url   : "{:U u='Admin/Auth/setAuth'}",
+				title : '设置权限',
+			})
+		}
+	});
+	
+</script> 
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

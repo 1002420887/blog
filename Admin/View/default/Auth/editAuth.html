@@ -1,0 +1,123 @@
+
+{:include file="../Public/head.html"}
+<link rel="stylesheet" type="text/css" href="/Public/h-ui/lib/Switch/bootstrapSwitch.css" />
+
+
+<!--/meta 作为公共模版分离出去-->
+<title>添加用户 - H-ui.admin v2.3</title>
+<meta name="keywords" content="SimePHP 框架">
+<meta name="description" content="SimePHP auth">
+</head>
+<body>
+<article class="page-container">
+	<form class="form form-horizontal ajaxUpload" id="form-admin-add">
+
+		<div class="row cl">
+			<label class="form-label col-sm-3">上级分类：</label>
+			<div class="formControls col-sm-9">
+				<select name="fid">
+					<option value="0" {:if $info.fid eq 0} selected="selected" {:/if}> - 顶级目录 - </option>
+					{:foreach from=$cls item=val}
+						<option value="{:$val.pid},{:$val.id}" {:if $info.fid eq $val.id} selected="selected" {:/if}>{:$val.nbsp}
+							{:if $val.menu eq 1} |- {:else} ► {:/if}
+						{:$val.title} 
+						</option>
+					{:/foreach}
+				</select>
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-sm-3"><span class="c-red">*</span>是否 目录 ：</label>
+			<div class="formControls col-sm-9">
+
+			   <div class="switch size-S" data-on="info" data-on-label="Yes" data-off-label="No">
+			   	<input type="checkbox"  name="menu" value="1" {:if $info.menu eq 1} checked {:/if}/>
+
+			   </div>
+
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-sm-3">是否 ajax ：</label>
+			<div class="formControls col-sm-9">
+				<div class="switch size-S" data-on="info" data-on-label="Yes" data-off-label="No">
+			   	<input type="checkbox" name="ajax" value="1" {:if $info.ajax eq 1} checked {:/if}/>
+			   </div>
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-sm-3">当前图标<i class="Hui-iconfont">{:$info.icon}</i></label>
+			<div class="formControls col-sm-4">
+				<input type="text" class="input-text" placeholder="修改图标" id="icon" name="icon">
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-sm-3"><span class="c-red">*</span>名称：</label>
+			<div class="formControls col-sm-6">
+				<input type="text" class="input-text" placeholder="名称" id="title" name="title" value="{:$info.title}">
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-sm-3"><span class="c-red">*</span>标识：</label>
+			<div class="formControls col-sm-8">
+				<input type="text" class="input-text" placeholder="模块/控制器/方法" id="name" name="name" value="{:$info.name}">
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-sm-3">URL：</label>
+			<div class="formControls col-sm-8">
+				<input type="text" class="input-text" placeholder="URL" id="url" name="url" value="{:$info.url}">
+			</div>
+		</div>
+		
+		<div class="row cl">
+			<div class="col-xs-8 col-xs-offset-4 col-sm-offset-3 text-r">
+				
+				<input type="hidden" class="input-text" name="id" value="{:$info.id}">
+
+				<input class="btn btn-primary radius" id="subData" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+			</div>
+		</div>
+	</form>
+</article>
+
+<!--_footer 作为公共模版分离出去--> 
+{:include file="../Public/pubjs.html"}
+<!--/_footer /作为公共模版分离出去--> 
+<script type="text/javascript" src="/Public/h-ui/lib/Switch/bootstrapSwitch.js"></script>
+
+{:include file="../Public/addpubjs.html"}
+<!--请在下方写此页面业务相关的脚本--> 
+<script type="text/javascript">
+
+//验证 调用提交
+$("#form-admin-add").validate({
+		rules:{
+			title:{
+				required:true,
+			},
+			// name:{
+			// 	required:true,
+			// },
+		},
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(){
+			$.fn.upData({
+				url   : "{:U u='Admin/Auth/editAuth'}",
+				title : '修改权限',
+			})
+		}
+	});
+	
+</script> 
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

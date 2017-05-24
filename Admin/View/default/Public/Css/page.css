@@ -1,0 +1,34 @@
+
+.h_ui_page{
+	height: 35px;
+	margin-top: 15px;
+}
+
+.h_ui_page a{
+	display: inline-block;
+	padding:3px 10px;
+	border:1px solid #ccc;
+	margin-left:8px; 
+	font-size: 14px;
+}
+
+.h_ui_page a:hover{
+	text-decoration: none;
+	background: #5A98DE;
+	color:#fff;
+}
+
+.h_ui_page .active{
+	background: #5A98DE;
+	color:#fff;
+}
+
+.h_ui_page .left_page{
+	width: 50%;
+	float: left;
+}
+
+.h_ui_page .right_page{
+	width: 50%;
+	float: right;
+}

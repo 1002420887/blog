@@ -1,0 +1,51 @@
+{:php}
+
+$field = '*,concat(pid,"/",id) as path';
+$order = 'path,id';
+
+$list = M('auth_rule')->field($field)->where('menu=1')->order($order)->select();
+
+foreach($list as $k => $v){
+	$arr[$v['fid']][] = $v;
+}
+
+$str = '';
+foreach($arr[0] as $k => $v){
+	$str .= '<dl>';
+	$str .= '<dt>';
+	$str .= '<i class="Hui-iconfont">'.$v['icon'].'</i> '.$v['title'].'<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i>';
+	$str .= '</dt>';
+	
+	$str .= '<dd>';
+	$str .= '<ul>';
+	
+	$listr = '';
+	if(isset($arr[$v['id']])){
+		foreach($arr[$v['id']] as $key => $val){
+			$listr .= '<li><a _href="'.U($val['url']).'" data-title="'.$val['title'].'" href="javascript:void(0)">'.$val['title'].'</a></li>';
+		}
+	}
+
+	$str .= $listr;
+	$str .= '</ul>';
+	$str .= '<dd>';
+	$str .= '</dl>';
+}
+
+$html = <<<str
+
+<aside class="Hui-aside">
+	<input runat="server" id="divScrollValue" type="hidden" value="" />
+	<div class="menu_dropdown bk_2">
+		$str
+	</div>
+</aside>
+str;
+
+echo $html;
+
+function str(){
+	echo 888;
+}
+
+{:/php}

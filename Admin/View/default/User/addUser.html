@@ -1,0 +1,139 @@
+
+{:include file="../Public/head.html"}
+<link rel="stylesheet" type="text/css" href="/Public/h-ui/lib/Switch/bootstrapSwitch.css" />
+<link rel="stylesheet" type="text/css" href="/Public/h-ui/lib/icheck/icheck.css" />
+
+
+<!--/meta 作为公共模版分离出去-->
+<title>添加用户 - H-ui.admin v2.3</title>
+<meta name="keywords" content="SimePHP 框架">
+<meta name="description" content="SimePHP auth">
+</head>
+<body>
+<article class="page-container">
+	<form class="form form-horizontal ajaxUpload" id="form-admin-add">
+
+		<div class="row cl">
+			<label class="form-label col-sm-3">状态：</label>
+			<div class="formControls col-sm-6">
+				<div class="switch size-S" data-on="info" data-on-label="Yes" data-off-label="No">
+			   	<input type="checkbox" name="state" checked='checked' value="1" />
+			   </div>
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-sm-3">性别：</label>
+			<div class="formControls col-sm-6">
+				<div class="skin-minimal">
+				  <div class="radio-box">
+				    <input type="radio" id="radio-1" checked="checked" value="男" name="sex">
+				    <label for="radio-1">男</label>
+				  </div>
+				  <div class="radio-box">
+				    <input type="radio" id="radio-2" value="女" name="sex">
+				    <label for="radio-2">女</label>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-sm-3"><span class="c-red">*</span>用户名：</label>
+			<div class="formControls col-sm-4">
+				<input type="text" class="input-text" placeholder="用户名" id="uname" name="uname">
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-sm-3"><span class="c-red">*</span>密码：</label>
+			<div class="formControls col-sm-4">
+				<input type="text" class="input-text" placeholder="密码" id="pwd" name="pwd">
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-sm-3"><span class="c-red">*</span>昵称：</label>
+			<div class="formControls col-sm-5">
+				<input type="text" class="input-text" placeholder="昵称" id="name" name="name">
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-sm-3"><span class="c-red">*</span>手机：</label>
+			<div class="formControls col-sm-6">
+				<input type="text" class="input-text" placeholder="手机" id="tel" name="tel">
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-sm-3">QQ：</label>
+			<div class="formControls col-sm-8">
+				<input type="text" class="input-text" placeholder="QQ" id="qq" name="qq">
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-sm-3">邮箱：</label>
+			<div class="formControls col-sm-9">
+				<input type="email" class="input-text" placeholder="邮箱" id="email" name="email">
+			</div>
+		</div>
+		
+		<div class="row cl">
+			<div class="col-xs-8 col-xs-offset-4 col-sm-offset-3 text-r">
+				<input class="btn btn-primary radius" id="subData" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+			</div>
+		</div>
+	</form>
+</article>
+
+<!--_footer 作为公共模版分离出去--> 
+{:include file="../Public/pubjs.html"}
+<!--/_footer /作为公共模版分离出去--> 
+<script type="text/javascript" src="/Public/h-ui/lib/Switch/bootstrapSwitch.js"></script>
+<script type="text/javascript" src="/Public/h-ui/lib/icheck/jquery.icheck.min.js"></script>
+{:include file="../Public/addpubjs.html"}
+
+<!--请在下方写此页面业务相关的脚本--> 
+<script type="text/javascript">
+
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+});
+
+//验证 调用提交
+$("#form-admin-add").validate({
+		rules:{
+			uname:{
+				required:true,
+			},
+			pwd:{
+				required:true,
+			},
+			name:{
+				required:true,
+			},
+			tel:{
+				required:true,
+			},
+		},
+		onkeyup:false,
+		focusCleanup:true,
+		success:"valid",
+		submitHandler:function(){
+			$.fn.upData({
+				url   : "{:U u='Admin/User/addUser'}",
+				title : '添加用户',
+			})
+		}
+	});
+	
+</script> 
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6 ielt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7 ielt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>登录 SimePHP</title>
+<link rel="stylesheet" type="text/css" href="{:C c='__CSS__'}/login.css" />
+</head>
+<body>
+<div class="container">
+	<section id="content">
+		<form id='sub' >
+			<h1>登录 后台</h1>
+			<div>
+				<input type="text" placeholder="用户名" required="" name="uname" id="username" />
+			</div>
+			<div>
+				<input type="password" placeholder="密码" required="" name="pwd" id="password" />
+			</div>
+			<div>
+				<input type="submit" value="登录" />
+				<a href="#">忘记您的密码?</a>
+				<a href="#">记住</a>
+			</div>
+		</form><!-- form -->
+		<div class="button">
+			<!-- <a href="#">Download source file</a> -->
+			 &copy; SimePHP 2016
+		</div><!-- button -->
+	</section><!-- content -->
+</div><!-- container -->
+<!-- 分页CSS -->
+{:include file="../Public/pubjs.html"}
+
+<script type="text/javascript">
+
+	//登录
+	$("#sub").submit(function(){
+		$.post("{:U u='Admin/Login/index'}", $('#sub').serialize(),function(re){
+			switch(re){
+				case 'succeed':
+					location.href = "{:U u='Admin/Index/index'}";
+				break;
+
+				case 'error':
+					layer.msg('用户名或密码错误',{icon:2,time:1000});
+				break;
+
+				default:
+				layer.msg(re,{icon:3,time:1000});
+			}
+		});
+		return false;
+	});
+</script>
+</body>
+</html>

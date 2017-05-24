@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/Public/h-ui/lib/html5.js"></script>
+<script type="text/javascript" src="/Public/h-ui/lib/respond.min.js"></script>
+<script type="text/javascript" src="/Public/h-ui/lib/PIE_IE678.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/Public/h-ui/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/Public/h-ui/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="/Public/h-ui/lib/Hui-iconfont/1.0.7/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="/Public/h-ui/lib/icheck/icheck.css" />
+<link rel="stylesheet" type="text/css" href="/Public/h-ui/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="/Public/h-ui/static/h-ui.admin/css/style.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<title>我的桌面</title>
+<style type="text/css">.acol{color:#5D66D0;}</style>
+</head>
+<body>
+<div class="page-container">
+	<p class="f-20 text-success">欢迎使用 SimePHP <span class="f-14">v1.0</span> PHP框架！</p>
+	<p>登录次数：{:$info.num} </p>
+	<p>上次登录IP：{:$info.last_ip}  上次登录时间：{:DATE p='Y-m-d H:i:s' time=$info.last_login}</p>
+	
+	<form action="{:U u='Admin/Index/upfile'}" method="post" enctype="multipart/form-data">
+		<input type="file" name="file[]" multiple>
+		<input type="file" name="files">
+		<button type="submit"> 提交 </button>
+	</form>
+
+	<table class="table table-border table-bordered table-bg">
+		<thead>
+			<tr>
+				<th colspan="7" scope="col">信息统计</th>
+			</tr>
+			<tr class="text-c">
+				<th>统计</th>
+				<th>资讯库</th>
+				<th>图片库</th>
+				<th>产品库</th>
+				<th>用户</th>
+				<th>管理员</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="text-c">
+				<td>总数</td>
+				<td>92</td>
+				<td>9</td>
+				<td>0</td>
+				<td>8</td>
+				<td>20</td>
+			</tr>
+			<tr class="text-c">
+				<td>今日</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr class="text-c">
+				<td>昨日</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr class="text-c">
+				<td>本周</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr class="text-c">
+				<td>本月</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="table table-border table-bordered table-bg mt-20">
+		<thead>
+			<tr>
+				<th colspan="2" scope="col">服务器信息</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th width="30%">服务器计算机名</th>
+				<td><span id="lbServerName">{:$pcname}</span></td>
+			</tr>
+			<tr>
+				<td>服务器IP地址</td>
+				<td>{:$ip}</td>
+			</tr>
+			<tr>
+				<td>服务器域名</td>
+				<td>{:$host}</td>
+			</tr>
+			<tr>
+				<td>服务器端口 </td>
+				<td>{:$port}</td>
+			</tr>
+			<tr>
+				<td>PHP 版本 </td>
+				<td>{:$ven} &nbsp; <a class="acol" href="{:U u='Admin/Index/phpInfo'}" target="_blank"> phpInfo();</a></td>
+			</tr>
+			<tr>
+				<td>本文件所在文件夹 </td>
+				<td>{:$dir}</td>
+			</tr>
+			<tr>
+				<td>服务器操作系统 </td>
+				<td>{:$os}</td>
+			</tr>
+			<tr>
+				<td>系统所在文件夹 </td>
+				<td>{:$sdir}</td>
+			</tr>
+			<tr>
+				<td>服务器脚本超时时间 </td>
+				<td>{:$ctime}秒</td>
+			</tr>
+			<tr>
+				<td>服务器当前时间 </td>
+				<td>{:$time}</td>
+			</tr>
+			<tr>
+				<td>当前SessionID </td>
+				<td>gznhpwmp34004345jz2q3l45</td>
+			</tr>
+			<tr>
+				<td>当前系统用户名 </td>
+				<td>{:$info.uname}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<footer class="footer mt-20">
+	<div class="container">
+		<p>感谢jQuery、layer、laypage、Validform、UEditor、My97DatePicker、iconfont、Datatables、WebUploaded、icheck、highcharts、bootstrap-Switch<br>
+			Copyright &copy;2015 H-ui.admin v2.3 All Rights Reserved.<br>
+			本后台系统由<a href="http://www.h-ui.net/" target="_blank" title="H-ui前端框架">H-ui前端框架</a>提供前端技术支持</p>
+	</div>
+</footer>
+<script type="text/javascript" src="/Public/h-ui/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="/Public/h-ui/static/h-ui/js/H-ui.js"></script> 
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?080836300300be57b7f34f4b3e97d911";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F080836300300be57b7f34f4b3e97d911' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>

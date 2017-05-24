@@ -1,0 +1,79 @@
+
+<script type="text/javascript" src="/Public/h-ui/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="/Public/h-ui/lib/layer/2.1/layer.js"></script> 
+<script type="text/javascript" src="/Public/h-ui/static/h-ui/js/H-ui.js"></script> 
+<script type="text/javascript" src="/Public/h-ui/static/h-ui.admin/js/H-ui.admin.js"></script>
+
+<script type="text/javascript">
+	
+	
+	(function(){
+		//ajax 提交 插件
+		$.fn.upData = function(opt){
+			new upData(opt);
+		}
+		function upData(opt){
+
+			$.extend(this,upData,opt);
+			this.upload();
+		}
+		upData.prototype = {
+
+			upload:function(){
+				var title = this.title;
+				$.post(this.url, $('.ajaxUpload').serialize(),function(re){
+
+					switch(re){
+						case 'succeed':
+							layer.msg(title+'成功',{icon:1,time:1000});
+							setTimeout(function(){
+								parent.location.reload();
+							},1500);
+						break;
+
+						case 'error':
+							layer.msg(title+'失败',{icon:2,time:1000});
+						break;
+
+						default:
+						layer.msg(re,{icon:3,time:1000});
+					}
+				});
+			}
+		}
+
+		//ajax 提交 删除 插件
+		$.fn.delData = function(opt){
+			new delData(opt);
+		}
+		function delData(opt){
+
+			$.extend(this,delData,opt);
+			this.del();
+		}
+		delData.prototype = {
+
+			del:function(){
+				var title = this.title;
+				$.post(this.url, this.data,function(re){
+
+					switch(re){
+						case 'succeed':
+							layer.msg(title+'成功',{icon:1,time:1000});
+							setTimeout(function(){
+								location.reload();
+							},1500);
+						break;
+
+						case 'error':
+							layer.msg(title+'失败',{icon:2,time:1000});
+						break;
+
+						default:
+						layer.msg(re,{icon:3,time:1000});
+					}
+				});
+			}
+		}
+	})(jQuery)
+</script>
