@@ -1,0 +1,258 @@
+    {:include file="../Public/head.html"}
+
+    <!-- 自己样式 -->
+    <link href="{:C c='__CSS__'}/header.css" rel="stylesheet">
+    <link href="{:C c='__CSS__'}/content.css" rel="stylesheet">
+    <link href="{:C c='__CSS__'}/comm_main.css" rel="stylesheet">
+    <link href="{:C c='__CSS__'}/sinafaceandeffec.css" rel="stylesheet">
+    <link href="{:C c='__CSS__'}/footer.css" rel="stylesheet">
+    <link href="{:C c='__CSS__'}/default.css" rel="stylesheet">
+    <!-- 自己样式 END -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- header -->
+    {:include file="../Public/header.html"}
+    <!-- header end -->
+  
+    <!-- 中间主要部分 -->
+    <div class="main w1170 cl">
+
+      <!-- 左边box -->
+      <div class="main-l l">
+        <!-- 文章导航 -->
+        <div class="main-l-box pd">
+          <div class="nav">
+            <a href="">PHP</a> <i class="Hui-iconfont">&#xe6d7;</i>
+            <a href="">Thinkphp</a> <i class="Hui-iconfont">&#xe6d7;</i>
+            {:$info.title}
+          </div>
+        </div>
+        <!-- 文章导航 end -->
+
+        <div class="art-con pd">
+          <header class="cl">
+            <h1>{:$info.title}</h1>
+            <div class="auth-note l">
+              <span><i class="Hui-iconfont">&#xe690;</i> {:ST t=$info.time} ({:DATE time=$info.time p='m-d'})</span>
+              <span><i class="Hui-iconfont">&#xe725;</i> {:$info.rnum}次</span>
+              <span><i class="Hui-iconfont">&#xe622;</i> <a href="">{:$info.cnum}评论</a></span>
+              <span><i class="Hui-iconfont">&#xe697;</i> {:$info.zan}赞</span>
+            </div>
+          </header>
+          <article class="pt20">
+            <div id="preview-contents">
+              
+            </div>
+            {:$info.content}
+          </article>
+          <!-- 转载申明 -->
+          <p class="rep">转载请注明：
+            <a href="">原文来自程序员博客平台</a> &nbsp;
+            <input type="hidden" id="fe_text" value='<a href="https://www.baidu.com/">原文来自程序员博客平台</a>' name="copyauth"/>
+            <button type="button" class="copyauth btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" title="复制转载地址">Copy </button>
+          </p>
+
+          <!-- 打赏 赞-->
+          <div class="rew text-center">
+            <span class="ds">
+              <i class="sp">赏</i>
+              <p>打赏</p>
+            </span> &nbsp; &nbsp;
+            <span class="zan">
+              <i class="sp"><i class="Hui-iconfont">&#xe697;</i></i>
+              <p>点赞</p>
+            </span> &nbsp; &nbsp;
+            <span class="fx">
+              <i class="sp"><i class="Hui-iconfont">&#xe6aa;</i></i>
+              <p>分享</p>
+            </span>
+          </div>
+          <div class="prve-next cl">
+            <span class="text-left l">
+              上一篇：<a href="">如何解决点击A链接不</a>
+            </span>
+            <span class="text-right r">
+              下一篇：<a href="">如何解决点击A链接不</a>
+            </span>
+          </div>
+
+          <!-- 评论列表 -->
+          <div class="commentls cl">
+            <h2>15条评论</h2>
+            <div id="info-show" class="cl">
+              <ul class="cl"></ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- 评论框 -->
+        <div id="content" class="cl">
+          <h2><i class="Hui-iconfont">&#xe692;</i> 发表高论</h2>
+          <div class="wrap cl">
+            <div class="comment">
+              <div class="head-face">
+                <img src="./images/1.jpg" / >
+                <p>我是鸟</p>
+              </div>
+              <div class="content cl">
+                <div class="cont-box">
+                  <textarea class="text" placeholder="请输入..."></textarea>
+                </div>
+                <div class="tools-box">
+                  <div class="operator-box-btn"><span class="face-icon"  >☺</span></div>
+                  <div class="submit-btn"><input type="button" onClick="out()"value="提交评论" /></div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- 左边box end-->
+      <!-- 右边box -->
+      <div class="main-r r">
+        <div class="class-menu main-r-box r">
+          <h2>热门标签 <i class="Hui-iconfont">&#xe64b;</i></h2>
+          <div class="main-r-line"></div>
+          <ul>
+            <a href=""><li>Code Log</li></a>
+            <a href=""><li>CSS3</li></a>
+            <a href=""><li>HTML5</li></a>
+            <a href=""><li>ThinkPHP</li></a>
+            <a href=""><li>Hack</li></a>
+            <a href=""><li>JavaScript</li></a>
+            <a href=""><li>JQuery</li></a>
+            <a href=""><li>Tools</li></a>
+            <a href=""><li>Note</li></a>
+          </ul>
+        </div>
+      </div>
+      <!-- 右边box end-->
+    </div>
+    <!-- 中间主要部分end -->
+    
+    <div class="link pd w1170">
+      <h2>友情链接</h2>
+      <ul>
+        <a href=""><li>YzmCMS官网</li></a>
+        <a href=""><li>多骨鱼</li></a>
+        <a href=""><li>封尘博客</li></a>
+        <a href=""><li>叶落山城秋</li></a>
+        <a href=""><li>高蒙博客</li></a>
+        <a href=""><li>张艳博客</li></a>
+        <a href=""><li>爱佳博客</li></a>
+        <a href=""><li>飞信网</li></a>
+        <a href=""><li>YzmCMS官网</li></a>
+        <a href=""><li>多骨鱼</li></a>
+        <a href=""><li>封尘博客</li></a>
+        <a href=""><li>叶落山城秋</li></a>
+        <a href=""><li>高蒙博客</li></a>
+        <a href=""><li>张艳博客</li></a>
+        <a href=""><li>爱佳博客</li></a>
+        <a href=""><li>飞信网</li></a>
+        <a href=""><li>YzmCMS官网</li></a>
+        <a href=""><li>多骨鱼</li></a>
+        <a href=""><li>封尘博客</li></a>
+        <a href=""><li>叶落山城秋</li></a>
+        <a href=""><li>高蒙博客</li></a>
+        <a href=""><li>张艳博客</li></a>
+        <a href=""><li>爱佳博客</li></a>
+        <a href=""><li>飞信网</li></a>
+        <a href=""><li>YzmCMS官网</li></a>
+        <a href=""><li>多骨鱼</li></a>
+        <a href=""><li>封尘博客</li></a>
+        <a href=""><li>叶落山城秋</li></a>
+        <a href=""><li>高蒙博客</li></a>
+        <a href=""><li>张艳博客</li></a>
+        <a href=""><li>爱佳博客</li></a>
+        <a href=""><li>飞信网</li></a>
+        <a href=""><li>YzmCMS官网</li></a>
+        <a href=""><li>多骨鱼</li></a>
+        <a href=""><li>封尘博客</li></a>
+        <a href=""><li>叶落山城秋</li></a>
+        <a href=""><li>高蒙博客</li></a>
+        <a href=""><li>张艳博客</li></a>
+        <a href=""><li>爱佳博客</li></a>
+        <a href=""><li>飞信网</li></a>
+      </ul>
+    </div>
+
+    <footer>
+      <div class="ftcla">
+        <a>TC网公约</a> <span>|</span>
+        <a>联系我们</a> <span>|</span>
+        <a>开放API</a> <span>|</span>
+        <a>手机版</a>
+      </div>
+
+      <div class="ft-address">
+        <a>© 2016 TC宠物网 (上海市广元西路55号浩然高科技大厦1808室)（周一至周日，9:00-18:00）</a> 
+      </div>
+
+      <div class="ft-icp">
+        <a>沪公网安备31010402000116号</a> 
+      </div>
+    </footer>
+    <!-- 引入公共js -->
+    {:include file="../Public/pubjs.html"}
+
+    <!-- 引入弹窗js -->
+    {:include file="../Public/artDialog.html"}
+    
+    <!-- 标签js -->
+    <script src="/Public/bootstrap-3.3.0/js/tooltip.js"></script>
+    <script type="text/javascript" src="{:C c='__JS__'}/jquery.zclip.js"></script>
+
+    <!-- 页面js -->
+    <script type="text/javascript" src="{:C c='__JS__'}/header.js"></script>
+    
+    <script type="text/javascript" src="{:C c='__JS__'}/comm_main.js"></script>
+    <script type="text/javascript" src="{:C c='__JS__'}/sinafaceandeffec.js"></script>
+
+    <!-- <script src="./js/navline.js"></script> -->
+    <script type="text/javascript" src="{:C c='__JS__'}/content.js"></script>
+
+    <script type="text/javascript">
+        //注册
+        function reg(){
+          // var index = layer.load(0, {shade: false}); //0代表加载的风格，支持0-2
+          var a = tcADialog({
+            title:'新用户注册',
+            width:400,
+            url:"{:U u='Home/Login/reg'}"
+          });
+          a.add();
+          // layer.close(index);
+        }
+
+        //登陆
+        function login(){
+          var a = tcADialog({
+            title:'登陆',
+            width:400,
+            url:"{:U u='Home/Login/login'}"
+          });
+          a.add();
+        }
+
+        //退出登陆
+        function loginOut(){
+          $.ajax({
+               type  : 'POST',
+               url   : "{:U u='Home/Login/loginOut'}" ,
+               async : true,   
+              success : function(re){
+                  location.reload();
+              }
+          });
+        }
+    </script>
+  </body>
+</html>

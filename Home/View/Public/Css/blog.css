@@ -1,0 +1,27 @@
+
+
+.l{
+	float: left;
+}
+
+.r{
+	float: right;
+}
+
+.user-main{
+	
+}
+
+.user-main header{
+	margin-top: 25px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.user-main header small{
+	color:#777;
+}
+
+.table{
+	margin-top:5px; 
+}

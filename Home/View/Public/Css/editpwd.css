@@ -1,0 +1,19 @@
+
+
+
+.l{
+	float: left;
+}
+
+.r{
+	float: right;
+}
+
+.user-main{
+	padding-top: 50px;
+}
+
+.user-main .user-name{
+	padding-top: 7px;
+}
+

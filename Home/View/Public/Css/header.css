@@ -1,0 +1,166 @@
+
+body{
+	font-size: 14px;
+	font-family: 'Microsoft YaHei';
+}
+
+ul{
+	padding:0; 
+}
+
+li{
+	list-style: none;
+}
+
+i{
+	font-style:normal;
+}
+
+.l{
+	float: left !important;
+}
+
+.r{
+	float: right !important;
+}
+
+.cl:after{
+	color: both;
+	content: '.';
+	overflow: hidden;
+	visibility: hidden;
+	height: 0;
+	display: block;
+}
+
+.pd{
+	padding: 15px 20px 10px;
+}
+
+.mt10{
+	margin-top: 10px;
+}
+
+.mt20{
+	margin-top: 20px;
+}
+
+.mt15{
+	margin-top: 15px;
+}
+
+.pt15{
+	padding-top: 15px;
+}
+
+.pt20{
+	padding-top: 20px;
+}
+
+.pd{
+	padding: 15px 20px 10px;
+}
+
+.w1170{
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.col7{
+	color: #777;
+}
+
+.head-nav{
+	width: 100%;
+	height: 40px;
+	background-color: #1b1b1b;
+    background-image: linear-gradient(to bottom, #222, #111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+}
+
+.head-nav .hd_con{
+	height: 37px;
+	height: 40px;
+}
+
+.head-nav .hd_con ul a>li,.head-nav .hd_con ul .dropdown .dropdown-toggle{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	padding:0 15px; 
+}
+
+.head-nav .hd_con .login{
+	line-height: 40px;
+	padding:0 15px; 
+}
+
+.head-nav .hd_con .login a{
+	color: #999;
+}
+
+.head-nav .hd_con .login a:hover{
+	color: #fff;
+}
+
+.head-nav .hd_con .dropdown:hover{
+
+}
+
+.head-nav .hd_con ul .dropdown-toggle,.head-nav .hd_con .sla{
+	color: #999;
+	text-decoration: none;
+}
+
+/*.head-nav .hd_con ul a:hover{
+	color:#fff;
+}*/
+
+.head-nav .hd_con ul li{
+	color: #999;
+}
+
+.head-nav .hd_con ul li:hover,.head-nav .hd_con ul .dropdown-toggle:hover{
+	color:#fff;
+}
+
+.head-nav .hd_con .sel,.head-nav .hd_con .open .dropdown-toggle{
+	background: #111;
+	color:#fff;
+}
+
+.head-nav .hd_con .open .dropdown-toggle a{
+	color:#333;
+}
+
+.head-nav .dropdown-menu{
+	margin: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.head-nav .dropdown-toggle span{
+	-webkit-transition: -webkit-transform 0.2s ease-out; 
+	-moz-transition: -moz-transform 0.2s ease-out; 
+	transition: transform 0.2s ease-out;
+}
+
+.head-nav .dropdown:hover span{
+	-webkit-transform: rotate(180deg); 
+	-moz-transform: rotate(180deg); 
+	transform: rotate(180deg); 
+}
+
+.navbar-brand{
+	padding: 10px 15px 10px 0;
+	height: 40px;
+}
+
+.navbar-header a{
+	color:#999;
+}
+
+.navbar-header a:hover{
+	color:#fff;
+}

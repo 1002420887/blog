@@ -1,0 +1,22 @@
+
+footer{
+	margin-top: 20px;
+	background: #fff;
+	height: 170px;
+	text-align: center;
+	padding-top: 50px;
+}
+
+footer span{
+	color: #777;
+}
+
+footer div{
+	margin-bottom:10px; 
+}
+
+footer a{
+	color: #777;
+	margin:0 5px; 
+	display: inline-block;
+}

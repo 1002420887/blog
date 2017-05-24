@@ -1,0 +1,30 @@
+
+.l{
+	float: left;
+}
+
+.r{
+	float: right;
+}
+
+.user-main{
+	
+}
+
+.user-head{
+	margin:20px 0;
+}
+
+.user-main ul{
+	margin-bottom: 40px;
+}
+
+.user-main ul li{
+	display: inline-block;
+}
+
+.user-main ul > li + li::before{
+	content: '>';
+	padding:0 5px; 
+}
+

@@ -1,8 +1,47 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends Controller {
-    public function index(){
-        $this->show('<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px } a,a:hover{color:blue;}</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p><br/>版本 V{$Think.version}</div><script type="text/javascript" src="http://ad.topthink.com/Public/static/client.js"></script><thinkad id="ad_55e75dfae343f5a1"></thinkad><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
-    }
+class IndexController extends Controller{
+
+	function index(){
+		$uid = session(C('WEB_SESSION'))['uid'];
+
+		$data  = D('Blog');
+		$cData = D('User_cla');
+
+		$cid   = I('cid');
+
+		//数据列表
+		// $where = 'del = 0';
+		$where .= $uid  ? ' and b.uid = '.$uid : '';
+		$where .= $cid  ? ' and FIND_IN_SET('.$cid.',b.pid)' : '' ;
+		
+		$field = 'b.*,c.name';
+		$order = 'b.id desc';
+
+		$list  = $data->sel($where,15,$field,$order);
+		
+		$this->assign('cid',$cid);
+		$this->assign('uid',$uid);
+		$this->assign('list',$list['list']);
+		$this->assign('page',$list['page']);
+		$this->display();
+	}
+
+	// //内容显示页
+	// function cont(){
+	// 	$data = M('blog');
+	// 	$id   = I('id');
+
+	// 	$info = $data->where('id='.$id)->find();
+	// 	$info['content'] = html_entity_decode($info['content']);
+
+	// 	$this->assign('info',$info);
+	// 	$this->display();
+	// }
+
+	// function test(){
+
+	// 	$this->display();
+	// }
 }

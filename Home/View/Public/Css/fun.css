@@ -1,0 +1,74 @@
+
+body{
+	background: #EEEFF1
+}
+
+label{
+	cursor: pointer;
+}
+
+nav{
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 1px 1px #E5E5E5;
+}
+
+nav .left{
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+}
+
+nav .center{
+	width: 800px;
+	height: 100px;
+}
+
+nav .center .search{
+	width: 576px;
+	margin: 0 auto;
+	margin-top: 32px;
+}
+
+nav .center .search input{
+	width: 480px;
+	height: 35px;
+	border:1px solid #ddd;
+	border-right: none;
+	padding-left: 5px;
+	vertical-align:middle;
+	border-top-left-radius:2px; 
+	border-bottom-left-radius:2px; 
+}
+
+nav .center .search .sear_butt{
+	width: 90px;
+	height: 37px;
+	border:1px solid #ddd;
+	background: #fff;
+	padding-left:20px; 
+	background: url('../icon/sear.png') no-repeat 10px center;
+	vertical-align:middle;
+	border-top-right-radius:2px; 
+	border-bottom-right-radius:2px;
+	position: relative;
+	left: -1px; 
+}
+
+nav .right{
+	width: 200px;
+	height: 100px;
+}
+
+nav .right button{
+	width: 145px;
+	height: 35px;
+	background: #FF555A;
+	color: #fff;
+	border: none;
+	margin-top: 32px;
+	border-radius: 2px;
+}
+

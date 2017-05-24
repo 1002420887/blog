@@ -5,10 +5,10 @@ return array(
 	'TMPL_PARSE_STRING'=>array('__PUBLIC__'=>'/Public'),
 	'DB_TYPE'               =>  'mysql',     // 数据库类型
 	'DB_HOST'               =>  '127.0.0.1', // 主机地址
-    'DB_NAME'               =>  'blog',     // 数据库名
+    'DB_NAME'               =>  'sime',     // 数据库名
     'DB_USER'               =>  'root',      // 用户名
     'DB_PWD'                =>  'root',         // 密码
-    'DB_PREFIX'             =>  'sql_',    // 数据库前缀
+    'DB_PREFIX'             =>  'sime_',    // 数据库前缀
     
 
     'COOKIE_PREFIX'         =>  'td',      // Cookie前缀避免冲突

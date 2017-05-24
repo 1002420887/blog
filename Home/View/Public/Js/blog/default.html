@@ -1,0 +1,1185 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+     
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>  
+
+    <script type="text/javascript" src="js/tracking.js" charset="utf-8"></script>  
+
+    <script type="text/javascript">
+        var protocol = window.location.protocol;
+        document.write('<script type="text/javascript" src="' + protocol + '//csdnimg.cn/pubfooter/js/repoAddr2.js?v=' + Math.random() + '"></' + 'script>');
+    </script>
+
+  
+ <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
+
+    <title>测试这个东西好不啦 - u014697091的博客
+        - 博客频道 - CSDN.NET</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Docker使用Link在容器之间建立连接" />
+    <script src="js/jquery.js" type="text/javascript"></script>
+      <script type="text/javascript" src="js/jquery-version.js"></script>
+    <script type="text/javascript" src="js/ad.js"></script>
+        <!--new top-->
+       
+        <link rel="stylesheet" href="css/index.css">
+        <!--new top-->
+    
+      <!-- ad begin -->
+         <script language="javascript" type="text/javascript" src="js/tracking.js"></script>
+    <!-- ad end-->
+
+    <link rel="Stylesheet" type="text/css" href="css/style.css" />
+    <link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="/u014697091/rss/list" />
+    <link rel="shortcut icon" href="http://c.csdnimg.cn/public/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/default.css" />
+ 
+
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?6bcd52f51e9b3dce32bec4a3997715ac";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+</head>
+<body>
+
+
+    <!-- 广告位开始 -->
+        <ins data-revive-zoneid="149" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+    <!-- 广告位结束 -->
+
+    
+   
+      <!--new top-->
+    <script id="toolbar-tpl-scriptId" fixed="true" prod="blog" skin="black" src="js/html.js" type="text/javascript"></script>
+     <!--new top-->
+    <div id="container">
+        <div id="header">
+    <div class="header">
+        <div id="blog_title">
+            <h2>
+                <a href="http://blog.csdn.net/u014697091">u014697091的博客</a></h2>
+            <h3></h3>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        
+     
+    </div>
+</div>
+<div id="navigator">
+    <div class="navigator_bg">
+    </div>
+    <div class="navigator">
+        <ul>           
+                <li id="btnContents"><a href="http://blog.csdn.net/u014697091?viewmode=contents"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_mulu'])">
+                    <img src="picture/ico_list.gif">目录视图</span></a></li>
+                <li id="btnView"><a href="http://blog.csdn.net/u014697091?viewmode=list"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_zhaiyao'])">
+                    <img src="picture/ico_summary.gif">摘要视图</span></a></li>
+                <li id="btnRss"><a href="http://blog.csdn.net/u014697091/rss/list"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_RSS'])">
+                    <img src="picture/ico_rss.gif">订阅</span></a></li>                
+            
+
+            </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    var username = "u014697091";
+    var _blogger = username;
+    var blog_address = "http://blog.csdn.net/u014697091";
+    var static_host = "http://static.blog.csdn.net";
+    var currentUserName = "";  
+</script>
+
+        <div id="body">
+            <div id="main">
+                <div class="main">
+                        <div class="ad_class">
+<div class="notice tracking-ad" data-mod='popu_3' > 
+
+
+<a href="http://bss.csdn.net/m/topic/edu_exam
+">
+<font color=blue>2017直通软考，拿证无忧
+
+
+</font></a>
+
+&nbsp;&nbsp;&nbsp;&nbsp
+
+<a href="http://edu.csdn.net/huiyiCourse/detail/274
+">
+<font color=red>程序员简历优化指南！ 
+</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="http://blog.csdn.net/turingbooks/article/details/54582158">
+<font color=blue>程序员1月书讯
+</font></a>
+
+&nbsp;&nbsp;&nbsp;
+
+<a href="http://bss.csdn.net/m/product/aliyun_essay/index
+">
+<font color=red>云端应用征文大赛，秀绝招，赢无人机！
+</font></a>
+
+
+</div>                        </div>
+                        
+
+
+
+  
+<link href="css/comment1.css" type="text/css" rel="stylesheet" />
+<link href="css/style1.css" type="text/css" rel="stylesheet" />
+<script language='JavaScript' type='text/javascript' src='js/jquery.cookie.js'></script>
+<script type="text/javascript" src="js/main.js"></script>
+<link rel="stylesheet" href="css/markdown_views.css" />
+<link rel="stylesheet" href="css/category.css" />
+<script type="text/javascript" src="js/mathjax.js"></script>
+<script type="text/javascript" src="js/web-storage-cache.min.js"></script>
+<script type="text/javascript" src="js/replace.min.js"></script>
+
+
+
+
+  <script type="text/ecmascript">
+      window.quickReplyflag = true;
+           
+            var isBole = false;
+            
+      
+      var fasrc="http://my.csdn.net/my/favorite/miniadd?t=%e6%b5%8b%e8%af%95%e8%bf%99%e4%b8%aa%e4%b8%9c%e8%a5%bf%e5%a5%bd%e4%b8%8d%e5%95%a6&u=http://blog.csdn.net/u014697091/article/details/54312659"
+
+    </script>
+<div id="article_details" class="details">
+    <div class="article_title">   
+         <span class="ico ico_type_Original"></span>
+
+
+    <h1>
+        <span class="link_title"><a href="/u014697091/article/details/54312659">
+        <font color="red">[置顶]</font>
+        测试这个东西好不啦            
+        </a></span>
+    </h1>
+</div>
+
+   
+
+        <div class="article_manage clearfix">
+        <div class="article_r">
+            <span class="link_postdate">2017-01-10 12:25</span>
+            <span class="link_view" title="阅读次数">26人阅读</span>
+            <span class="link_comments" title="评论次数"> <a href="#comments" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)</span>
+            <span class="link_collect tracking-ad" data-mod="popu_171"> <a href="javascript:void(0);" onclick="javascript:collectArticle('%e6%b5%8b%e8%af%95%e8%bf%99%e4%b8%aa%e4%b8%9c%e8%a5%bf%e5%a5%bd%e4%b8%8d%e5%95%a6','54312659');return false;" title="收藏">收藏</a></span>
+             <span class="link_report"> <a href="#report" onclick="javascript:report(54312659,2);return false;" title="举报">举报</a></span>
+
+        </div>
+    </div>
+    <div class="embody"  style="display:none" id="embody">
+        <span class="embody_t">本文章已收录于：</span>
+        <div class="embody_c" id="lib" value="{&quot;err&quot;:0,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:[]}"></div>
+    </div>
+    <style type="text/css">        
+            .embody{
+                padding:10px 10px 10px;
+                margin:0 -20px;
+                border-bottom:solid 1px #ededed;                
+            }
+            .embody_b{
+                margin:0 ;
+                padding:10px 0;
+            }
+            .embody .embody_t,.embody .embody_c{
+                display: inline-block;
+                margin-right:10px;
+            }
+            .embody_t{
+                font-size: 12px;
+                color:#999;
+            }
+            .embody_c{
+                font-size: 12px;
+            }
+            .embody_c img,.embody_c em{
+                display: inline-block;
+                vertical-align: middle;               
+            }
+             .embody_c img{               
+                width:30px;
+                height:30px;
+            }
+            .embody_c em{
+                margin: 0 20px 0 10px;
+                color:#333;
+                font-style: normal;
+            }
+    </style>
+    <script  type="text/javascript">
+        $(function () {
+            try
+            {
+                var lib = eval("("+$("#lib").attr("value")+")");
+                var html = "";
+                if (lib.err == 0) {
+                    $.each(lib.data, function (i) {
+                        var obj = lib.data[i];
+                        //html += '<img src="' + obj.logo + '"/>' + obj.name + "&nbsp;&nbsp;";
+                        html += ' <a href="' + obj.url + '" target="_blank">';
+                        html += ' <img src="' + obj.logo + '">';
+                        html += ' <em><b>' + obj.name + '</b></em>';
+                        html += ' </a>';
+                    });
+                    if (html != "") {
+                        setTimeout(function () {
+                            $("#lib").html(html);                      
+                            $("#embody").show();
+                        }, 100);
+                    }
+                }      
+            } catch (err)
+            { }
+            
+        });
+    </script>
+      <div class="category clearfix">
+        <div class="category_l">
+           <img src="picture/category_icon.jpg">
+            <span>分类：</span>
+        </div>
+        <div class="category_r">
+                    <label  onclick="GetCategoryArticles('6673576','u014697091','top','54312659');">
+                        <span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_fenlei']);">ft<em>（1）</em></span>
+                      <img class="arrow-down" src="picture/arrow_triangle _down.jpg" style="display:inline;">
+                      <img class="arrow-up" src="picture/arrow_triangle_up.jpg" style="display:none;">
+                        <div class="subItem">
+                            <div class="subItem_t"><a  href="http://blog.csdn.net/u014697091/article/category/6673576"  target="_blank">作者同类文章</a><i class="J_close">X</i></div>
+                            <ul class="subItem_l" id="top_6673576">                            
+                            </ul>
+                        </div>
+                    </label>                    
+        </div>
+    </div>
+    <script   type="text/javascript" src="js/category.js"></script>  
+        <div   class="bog_copyright">         
+            <p  class="copyright_p" >版权声明：本文为博主原创文章，未经博主允许不得转载。</p>
+        </div>
+
+  
+
+  
+  
+     
+
+<div id="article_content" class="article_content">
+        <div class="markdown_views"><h1 id="欢迎使用markdown编辑器写博客">欢迎使用Markdown编辑器写博客</h1>
+
+<p>本Markdown编辑器使用<a href="https://github.com/benweet/stackedit">StackEdit</a>修改而来，用它写博客，将会带来全新的体验哦：</p>
+
+<ul>
+<li><strong>Markdown和扩展Markdown简洁的语法</strong></li>
+<li><strong>代码块高亮</strong></li>
+<li><strong>图片链接和图片上传</strong></li>
+<li><strong><em>LaTex</em>数学公式</strong></li>
+<li><strong>UML序列图和流程图</strong></li>
+<li><strong>离线写博客</strong></li>
+<li><strong>导入导出Markdown文件</strong></li>
+<li><strong>丰富的快捷键</strong></li>
+</ul>
+
+<hr>
+
+
+
+<h2 id="快捷键">快捷键</h2>
+
+<ul>
+<li>加粗    <code>Ctrl + B</code> </li>
+<li>斜体    <code>Ctrl + I</code> </li>
+<li>引用    <code>Ctrl + Q</code></li>
+<li>插入链接    <code>Ctrl + L</code></li>
+<li>插入代码    <code>Ctrl + K</code></li>
+<li>插入图片    <code>Ctrl + G</code></li>
+<li>提升标题    <code>Ctrl + H</code></li>
+<li>有序列表    <code>Ctrl + O</code></li>
+<li>无序列表    <code>Ctrl + U</code></li>
+<li>横线    <code>Ctrl + R</code></li>
+<li>撤销    <code>Ctrl + Z</code></li>
+<li>重做    <code>Ctrl + Y</code></li>
+</ul>
+
+
+
+<h2 id="markdown及扩展">Markdown及扩展</h2>
+
+<blockquote>
+  <p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。    —— <a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank"> [ 维基百科 ]</a></p>
+</blockquote>
+
+<p>使用简单的符号标识不同的标题，将某些文字标记为<strong>粗体</strong>或者<em>斜体</em>，创建一个<a href="http://www.csdn.net">链接</a>等，详细语法参考帮助？。</p>
+
+<p>本编辑器支持 <strong>Markdown Extra</strong> , 　扩展了很多好用的功能。具体请参考<a href="https://github.com/jmcmanus/pagedown-extra" title="Pagedown Extra">Github</a>.  </p>
+
+
+
+<h3 id="表格">表格</h3>
+
+<p><strong>Markdown　Extra</strong>　表格语法：</p>
+
+<table>
+<thead>
+<tr>
+  <th>项目</th>
+  <th>价格</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Computer</td>
+  <td>$1600</td>
+</tr>
+<tr>
+  <td>Phone</td>
+  <td>$12</td>
+</tr>
+<tr>
+  <td>Pipe</td>
+  <td>$1</td>
+</tr>
+</tbody></table>
+
+
+<p>可以使用冒号来定义对齐方式：</p>
+
+<table>
+<thead>
+<tr>
+  <th align="left">项目</th>
+  <th align="right">价格</th>
+  <th align="center">数量</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">Computer</td>
+  <td align="right">1600 元</td>
+  <td align="center">5</td>
+</tr>
+<tr>
+  <td align="left">Phone</td>
+  <td align="right">12 元</td>
+  <td align="center">12</td>
+</tr>
+<tr>
+  <td align="left">Pipe</td>
+  <td align="right">1 元</td>
+  <td align="center">234</td>
+</tr>
+</tbody></table>
+
+
+
+
+<h3 id="定义列表">定义列表</h3>
+
+<dl>
+<dt><strong>Markdown　Extra</strong>　定义列表语法：</dt>
+<dt>项目１</dt>
+<dt>项目２</dt>
+<dd>定义 A</dd>
+
+<dd>定义 B</dd>
+
+<dt>项目３</dt>
+<dd>定义 C</dd>
+
+<dd>
+<p>定义 D</p>
+
+<blockquote>
+  <p>定义D内容</p>
+</blockquote>
+</dd>
+</dl>
+
+
+
+<h3 id="代码块">代码块</h3>
+
+<p>代码块语法遵循标准markdown代码，例如：</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-decorator">@requires_authorization</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">somefunc</span><span class="hljs-params">(param1=<span class="hljs-string">''</span>, param2=<span class="hljs-number">0</span>)</span>:</span>
+    <span class="hljs-string">'''A docstring'''</span>
+    <span class="hljs-keyword">if</span> param1 &gt; param2: <span class="hljs-comment"># interesting</span>
+        <span class="hljs-keyword">print</span> <span class="hljs-string">'Greater'</span>
+    <span class="hljs-keyword">return</span> (param2 - param1 + <span class="hljs-number">1</span>) <span class="hljs-keyword">or</span> <span class="hljs-keyword">None</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SomeClass</span>:</span>
+    <span class="hljs-keyword">pass</span>
+<span class="hljs-prompt">&gt;&gt;&gt; </span>message = <span class="hljs-string">'''interpreter
+<span class="hljs-prompt">... </span>prompt'''</span></code></pre>
+
+
+
+<h3 id="脚注">脚注</h3>
+
+<p>生成一个脚注<a href="#fn:footnote" id="fnref:footnote" title="See footnote" class="footnote">1</a>.</p>
+
+
+
+<h3 id="目录">目录</h3>
+
+<p>用 <code>[TOC]</code>来生成目录：</p>
+
+<p><div class="toc">
+<ul>
+<li><a href="#欢迎使用markdown编辑器写博客">欢迎使用Markdown编辑器写博客</a><ul>
+<li><a href="#快捷键">快捷键</a></li>
+<li><a href="#markdown及扩展">Markdown及扩展</a><ul>
+<li><a href="#表格">表格</a></li>
+<li><a href="#定义列表">定义列表</a></li>
+<li><a href="#代码块">代码块</a></li>
+<li><a href="#脚注">脚注</a></li>
+<li><a href="#目录">目录</a></li>
+<li><a href="#数学公式">数学公式</a></li>
+<li><a href="#uml-图">UML 图</a></li>
+</ul>
+</li>
+<li><a href="#离线写博客">离线写博客</a></li>
+<li><a href="#浏览器兼容">浏览器兼容</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+
+
+<h3 id="数学公式">数学公式</h3>
+
+<p>使用MathJax渲染<em>LaTex</em> 数学公式，详见<a href="http://math.stackexchange.com/">math.stackexchange.com</a>.</p>
+
+<ul>
+<li>行内公式，数学公式为：<span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-1-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-1" style="width: 13.55em; display: inline-block;"><span style="display: inline-block; position: relative; width: 10.827em; height: 0px; font-size: 125%;"><span style="position: absolute; clip: rect(2.183em, 1000em, 3.503em, -0.455em); top: -3.093em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="mi" id="MathJax-Span-3" style="font-family: MathJax_Main;">Γ</span><span class="mo" id="MathJax-Span-4" style="font-family: MathJax_Main;">(</span><span class="mi" id="MathJax-Span-5" style="font-family: MathJax_Math; font-style: italic;">n</span><span class="mo" id="MathJax-Span-6" style="font-family: MathJax_Main;">)</span><span class="mo" id="MathJax-Span-7" style="font-family: MathJax_Main; padding-left: 0.278em;">=</span><span class="mo" id="MathJax-Span-8" style="font-family: MathJax_Main; padding-left: 0.278em;">(</span><span class="mi" id="MathJax-Span-9" style="font-family: MathJax_Math; font-style: italic;">n</span><span class="mo" id="MathJax-Span-10" style="font-family: MathJax_Main; padding-left: 0.222em;">−</span><span class="mn" id="MathJax-Span-11" style="font-family: MathJax_Main; padding-left: 0.222em;">1</span><span class="mo" id="MathJax-Span-12" style="font-family: MathJax_Main;">)</span><span class="mo" id="MathJax-Span-13" style="font-family: MathJax_Main;">!</span><span class="mspace" id="MathJax-Span-14" style="height: 0em; vertical-align: 0em; width: 1em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-15" style="font-family: MathJax_Main;">∀</span><span class="mi" id="MathJax-Span-16" style="font-family: MathJax_Math; font-style: italic;">n</span><span class="mo" id="MathJax-Span-17" style="font-family: MathJax_Main; padding-left: 0.278em;">∈</span><span class="texatom" id="MathJax-Span-18" style="padding-left: 0.278em;"><span class="mrow" id="MathJax-Span-19"><span class="mi" id="MathJax-Span-20" style="font-family: MathJax_AMS;">N</span></span></span></span><span style="display: inline-block; width: 0px; height: 3.093em;"></span></span></span><span style="border-left: 0em solid; display: inline-block; overflow: hidden; width: 0px; height: 1.383em; vertical-align: -0.379em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-1">\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N</script>。</li>
+<li>块级公式：</li>
+</ul>
+
+
+
+<p><span class="MathJax_Preview"></span><div class="MathJax_Display" role="textbox" aria-readonly="true" style="text-align: center;"><span class="MathJax" id="MathJax-Element-2-Frame" style=""><nobr><span class="math" id="MathJax-Span-21" style="width: 11.617em; display: inline-block;"><span style="display: inline-block; position: relative; width: 9.28em; height: 0px; font-size: 125%;"><span style="position: absolute; clip: rect(0.94em, 1000em, 3.683em, -0.445em); top: -2.827em; left: 0em;"><span class="mrow" id="MathJax-Span-22"><span class="mi" id="MathJax-Span-23" style="font-family: MathJax_Math; font-style: italic;">x</span><span class="mo" id="MathJax-Span-24" style="font-family: MathJax_Main; padding-left: 0.278em;">=</span><span class="mstyle" id="MathJax-Span-25" style="padding-left: 0.278em;"><span class="mrow" id="MathJax-Span-26"><span class="mfrac" id="MathJax-Span-27"><span style="display: inline-block; position: relative; width: 7.16em; height: 0px; margin-right: 0.12em; margin-left: 0.12em;"><span style="position: absolute; clip: rect(1.616em, 1000em, 3.136em, -0.396em); top: -3.503em; left: 50%; margin-left: -3.52em;"><span class="mrow" id="MathJax-Span-28"><span class="mo" id="MathJax-Span-29" style="font-family: MathJax_Main;">−</span><span class="mi" id="MathJax-Span-30" style="font-family: MathJax_Math; font-style: italic;">b</span><span class="mo" id="MathJax-Span-31" style="font-family: MathJax_Main; padding-left: 0.222em;">±</span><span class="msqrt" id="MathJax-Span-32" style="padding-left: 0.222em;"><span style="display: inline-block; position: relative; width: 4.612em; height: 0px;"><span style="position: absolute; clip: rect(1.775em, 1000em, 2.998em, -0.44em); top: -2.827em; left: 1.013em;"><span class="mrow" id="MathJax-Span-33"><span class="msubsup" id="MathJax-Span-34"><span style="display: inline-block; position: relative; width: 0.875em; height: 0px;"><span style="position: absolute; clip: rect(1.813em, 1000em, 2.838em, -0.44em); top: -2.667em; left: 0em;"><span class="mi" id="MathJax-Span-35" style="font-family: MathJax_Math; font-style: italic;">b</span><span style="display: inline-block; width: 0px; height: 2.667em;"></span></span><span style="position: absolute; top: -2.928em; left: 0.427em;"><span class="mn" id="MathJax-Span-36" style="font-size: 70.7%; font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 2.507em;"></span></span></span></span><span class="mo" id="MathJax-Span-37" style="font-family: MathJax_Main; padding-left: 0.222em;">−</span><span class="mn" id="MathJax-Span-38" style="font-family: MathJax_Main; padding-left: 0.222em;">4</span><span class="mi" id="MathJax-Span-39" style="font-family: MathJax_Math; font-style: italic;">a</span><span class="mi" id="MathJax-Span-40" style="font-family: MathJax_Math; font-style: italic;">c</span></span><span style="display: inline-block; width: 0px; height: 2.827em;"></span></span><span style="position: absolute; clip: rect(3.57em, 1000em, 4.03em, -0.48em); top: -4.78em; left: 1.013em;"><span style="display: inline-block; position: relative; width: 3.598em; height: 0px;"><span style="position: absolute; font-family: MathJax_Main; top: -4em; left: -0.084em;">−<span style="display: inline-block; width: 0px; height: 4em;"></span></span><span style="position: absolute; font-family: MathJax_Main; top: -4em; left: 2.904em;">−<span style="display: inline-block; width: 0px; height: 4em;"></span></span><span style="font-family: MathJax_Main; position: absolute; top: -4em; left: 0.393em;">−<span style="display: inline-block; width: 0px; height: 4em;"></span></span><span style="font-family: MathJax_Main; position: absolute; top: -4em; left: 0.895em;">−<span style="display: inline-block; width: 0px; height: 4em;"></span></span><span style="font-family: MathJax_Main; position: absolute; top: -4em; left: 1.398em;">−<span style="display: inline-block; width: 0px; height: 4em;"></span></span><span style="font-family: MathJax_Main; position: absolute; top: -4em; left: 1.9em;">−<span style="display: inline-block; width: 0px; height: 4em;"></span></span><span style="font-family: MathJax_Main; position: absolute; top: -4em; left: 2.402em;">−<span style="display: inline-block; width: 0px; height: 4em;"></span></span></span><span style="display: inline-block; width: 0px; height: 4em;"></span></span><span style="position: absolute; clip: rect(2.99em, 1000em, 4.51em, -0.369em); top: -4.2em; left: 0em;"><span style="font-family: MathJax_Size1;">√</span><span style="display: inline-block; width: 0px; height: 4em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.827em;"></span></span><span style="position: absolute; clip: rect(2.001em, 1000em, 2.997em, -0.43em); top: -2.141em; left: 50%; margin-left: -0.507em;"><span class="mrow" id="MathJax-Span-41"><span class="mn" id="MathJax-Span-42" style="font-family: MathJax_Main;">2</span><span class="mi" id="MathJax-Span-43" style="font-family: MathJax_Math; font-style: italic;">a</span></span><span style="display: inline-block; width: 0px; height: 2.827em;"></span></span><span style="position: absolute; clip: rect(0.84em, 1000em, 1.227em, -0.48em); top: -1.287em; left: 0em;"><span style="border-left: 7.16em solid; display: inline-block; overflow: hidden; width: 0px; height: 1.25px; vertical-align: 0em;"></span><span style="display: inline-block; width: 0px; height: 1.067em;"></span></span></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.827em;"></span></span></span><span style="border-left: 0em solid; display: inline-block; overflow: hidden; width: 0px; height: 3.162em; vertical-align: -0.937em;"></span></span></nobr></span></div><script type="math/tex; mode=display" id="MathJax-Element-2">	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} </script></p>
+
+<p>更多LaTex语法请参考 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">这儿</a>.</p>
+
+
+
+<h3 id="uml-图">UML 图:</h3>
+
+<p>可以渲染序列图：</p>
+
+
+
+<div class="sequence-diagram"><svg height="270" version="1.1" width="460.3000030517578" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative; top: -0.199951px;"><desc>Created with Raphaël 2.1.0</desc><defs><path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block"></path><marker id="raphael-marker-endblock55" markerHeight="5" markerWidth="5" orient="auto" refX="2.5" refY="2.5"><use xlink:href="#raphael-marker-block" transform="rotate(180 2.5 2.5) scale(1,1)" stroke-width="1.0000" fill="#000" stroke="none"></use></marker></defs><rect x="10" y="20" width="50" height="40" r="0" rx="0" ry="0" fill="none" stroke="#000000" style="" stroke-width="2"></rect><rect x="20" y="30" width="30" height="20" r="0" rx="0" ry="0" fill="#ffffff" stroke="none" style=""></rect><text style="text-anchor: middle; font: 16px Andale Mono,monospace;" x="35" y="40" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" font-size="16px" font-family="Andale Mono, monospace"><tspan dy="6">张三</tspan></text><rect x="10" y="210" width="50" height="40" r="0" rx="0" ry="0" fill="none" stroke="#000000" style="" stroke-width="2"></rect><rect x="20" y="220" width="30" height="20" r="0" rx="0" ry="0" fill="#ffffff" stroke="none" style=""></rect><text style="text-anchor: middle; font: 16px Andale Mono,monospace;" x="35" y="230" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" font-size="16px" font-family="Andale Mono, monospace"><tspan dy="6">张三</tspan></text><path style="" fill="none" stroke="#000000" d="M35,60L35,210" stroke-width="2"></path><rect x="195.3000030517578" y="20" width="50" height="40" r="0" rx="0" ry="0" fill="none" stroke="#000000" style="" stroke-width="2"></rect><rect x="205.3000030517578" y="30" width="30" height="20" r="0" rx="0" ry="0" fill="#ffffff" stroke="none" style=""></rect><text style="text-anchor: middle; font: 16px Andale Mono,monospace;" x="220.3000030517578" y="40" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" font-size="16px" font-family="Andale Mono, monospace"><tspan dy="6">李四</tspan></text><rect x="195.3000030517578" y="210" width="50" height="40" r="0" rx="0" ry="0" fill="none" stroke="#000000" style="" stroke-width="2"></rect><rect x="205.3000030517578" y="220" width="30" height="20" r="0" rx="0" ry="0" fill="#ffffff" stroke="none" style=""></rect><text style="text-anchor: middle; font: 16px Andale Mono,monospace;" x="220.3000030517578" y="230" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" font-size="16px" font-family="Andale Mono, monospace"><tspan dy="6">李四</tspan></text><path style="" fill="none" stroke="#000000" d="M220.3000030517578,60L220.3000030517578,210" stroke-width="2"></path><rect x="45" y="75" width="165.3000030517578" height="20" r="0" rx="0" ry="0" fill="#ffffff" stroke="none" style=""></rect><text style="text-anchor: middle; font: 16px Andale Mono,monospace;" x="127.6500015258789" y="85" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" font-size="16px" font-family="Andale Mono, monospace"><tspan dy="6">嘿，小四儿, 写博客了没?</tspan></text><path style="" fill="none" stroke="#000000" d="M35,100C35,100,185.71251347322323,100,215.29573144990084,100" stroke-width="2" marker-end="url(#raphael-marker-endblock55)" stroke-dasharray="0"></path><rect x="240.3000030517578" y="120" width="145" height="30" r="0" rx="0" ry="0" fill="none" stroke="#000000" style="" stroke-width="2"></rect><rect x="245.29998779296875" y="125" width="135" height="20" r="0" rx="0" ry="0" fill="#ffffff" stroke="none" style=""></rect><text style="text-anchor: middle; font: 16px Andale Mono,monospace;" x="312.8000030517578" y="135" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" font-size="16px" font-family="Andale Mono, monospace"><tspan dy="6">李四愣了一下，说：</tspan></text><rect x="45.150001525878906" y="165" width="165" height="20" r="0" rx="0" ry="0" fill="#ffffff" stroke="none" style=""></rect><text style="text-anchor: middle; font: 16px Andale Mono,monospace;" x="127.6500015258789" y="175" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" font-size="16px" font-family="Andale Mono, monospace"><tspan dy="6">忙得吐血，哪有时间写。</tspan></text><path style="" fill="none" stroke="#000000" d="M220.3000030517578,190C220.3000030517578,190,69.58748957853459,190,40.004271601856985,190" stroke-width="2" marker-end="url(#raphael-marker-endblock55)" stroke-dasharray="6,2"></path></svg></div>
+
+<p>或者流程图：</p>
+
+
+
+<div class="flow-chart"><svg height="378" version="1.1" width="143.5" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative; top: -0.833252px;"><desc>Created with Raphaël 2.1.0</desc><defs><marker id="raphael-marker-endblock33" markerHeight="3" markerWidth="3" orient="auto" refX="1.5" refY="1.5"><use xlink:href="#raphael-marker-block" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none"></use></marker></defs><rect x="0" y="0" width="50" height="40" r="20" rx="20" ry="20" fill="#ffffff" stroke="#000000" style="" stroke-width="2" class="flowchart" id="st" transform="matrix(1,0,0,1,35.25,14)"></rect><text style="text-anchor: start; font: 14px sans-serif;" x="10" y="20" text-anchor="start" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" id="stt" class="flowchartt" font-size="14px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,35.25,14)"><tspan dy="6">开始</tspan></text><rect x="0" y="0" width="80" height="40" r="0" rx="0" ry="0" fill="#ffffff" stroke="#000000" style="" stroke-width="2" class="flowchart" id="op" transform="matrix(1,0,0,1,20.25,118)"></rect><text style="text-anchor: start; font: 14px sans-serif;" x="10" y="20" text-anchor="start" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" id="opt" class="flowchartt" font-size="14px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,20.25,118)"><tspan dy="6">我的操作</tspan></text><path style="font-family: sans-serif; font-weight: normal;" fill="#ffffff" stroke="#000000" d="M28.125,15L0,30L56.25,60L112.5,30L56.25,0L0,30" stroke-width="2" font-family="sans-serif" font-weight="normal" id="cond" class="flowchart" transform="matrix(1,0,0,1,4,212)"></path><text style="text-anchor: start; font: 14px sans-serif;" x="33.125" y="30" text-anchor="start" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" id="condt" class="flowchartt" font-size="14px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,4,212)"><tspan dy="6">确认？</tspan><tspan dy="18" x="33.125"></tspan></text><rect x="0" y="0" width="50" height="40" r="20" rx="20" ry="20" fill="#ffffff" stroke="#000000" style="" stroke-width="2" class="flowchart" id="e" transform="matrix(1,0,0,1,35.25,336)"></rect><text style="text-anchor: start; font: 14px sans-serif;" x="10" y="20" text-anchor="start" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" id="et" class="flowchartt" font-size="14px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,35.25,336)"><tspan dy="6">结束</tspan></text><path style="font-family: sans-serif; font-weight: normal;" fill="none" stroke="#000000" d="M60.25,54C60.25,54,60.25,102.345947265625,60.25,114.9989881515503" stroke-width="2" marker-end="url(#raphael-marker-endblock33)" font-family="sans-serif" font-weight="normal"></path><path style="font-family: sans-serif; font-weight: normal;" fill="none" stroke="#000000" d="M60.25,158C60.25,158,60.25,197.65409994125366,60.25,209.00043908460066" stroke-width="2" marker-end="url(#raphael-marker-endblock33)" font-family="sans-serif" font-weight="normal"></path><path style="font-family: sans-serif; font-weight: normal;" fill="none" stroke="#000000" d="M60.25,272C60.25,272,60.25,320.345947265625,60.25,332.9989881515503" stroke-width="2" marker-end="url(#raphael-marker-endblock33)" font-family="sans-serif" font-weight="normal"></path><text style="text-anchor: start; font: 14px sans-serif;" x="65.25" y="282" text-anchor="start" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" font-size="14px" font-family="sans-serif" font-weight="normal"><tspan dy="6">yes</tspan></text><path style="font-family: sans-serif; font-weight: normal;" fill="none" stroke="#000000" d="M116.5,242C116.5,242,141.5,242,141.5,242C141.5,242,141.5,93,141.5,93C141.5,93,60.25,93,60.25,93C60.25,93,60.25,108.37344455718994,60.25,115.00924777425826" stroke-width="2" marker-end="url(#raphael-marker-endblock33)" font-family="sans-serif" font-weight="normal"></path><text style="text-anchor: start; font: 14px sans-serif;" x="121.5" y="232" text-anchor="start" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" font-size="14px" font-family="sans-serif" font-weight="normal"><tspan dy="6">no</tspan></text></svg></div>
+
+<ul>
+<li>关于 <strong>序列图</strong> 语法，参考 <a href="http://bramp.github.io/js-sequence-diagrams/">这儿</a>,</li>
+<li>关于 <strong>流程图</strong> 语法，参考 <a href="http://adrai.github.io/flowchart.js/">这儿</a>.</li>
+</ul>
+
+
+
+<h2 id="离线写博客">离线写博客</h2>
+
+<p>即使用户在没有网络的情况下，也可以通过本编辑器离线写博客（直接在曾经使用过的浏览器中输入<a href="http://write.blog.csdn.net/mdeditor">write.blog.csdn.net/mdeditor</a>即可。<strong>Markdown编辑器</strong>使用浏览器离线存储将内容保存在本地。</p>
+
+<p>用户写博客的过程中，内容实时保存在浏览器缓存中，在用户关闭浏览器或者其它异常情况下，内容不会丢失。用户再次打开浏览器时，会显示上次用户正在编辑的没有发表的内容。</p>
+
+<p>博客发表后，本地缓存将被删除。　</p>
+
+<p>用户可以选择 <i class="icon-disk"></i> 把正在写的博客保存到服务器草稿箱，即使换浏览器或者清除缓存，内容也不会丢失。</p>
+
+<blockquote>
+  <p><strong>注意：</strong>虽然浏览器存储大部分时候都比较可靠，但为了您的数据安全，在联网后，<strong>请务必及时发表或者保存到服务器草稿箱</strong>。</p>
+</blockquote>
+
+
+
+<h2 id="浏览器兼容">浏览器兼容</h2>
+
+<ol>
+<li>目前，本编辑器对Chrome浏览器支持最为完整。建议大家使用较新版本的Chrome。</li>
+<li>IE９以下不支持</li>
+<li>IE９，１０，１１存在以下问题 <br>
+<ol><li>不支持离线功能</li>
+<li>IE9不支持文件导入导出</li>
+<li>IE10不支持拖拽文件导入</li></ol></li>
+</ol>
+
+<hr>
+
+<div class="footnotes"><hr><ol><li id="fn:footnote">这里是 <strong>脚注</strong> 的 <em>内容</em>. <a href="#fnref:footnote" title="Return to article" class="reversefootnote">↩</a></li></ol></div></div>
+        <script  type="text/javascript">
+            $(function () {
+                $('pre.prettyprint code').each(function () {
+                    var lines = $(this).text().split('\n').length;
+                    var $numbering = $('<ul/>').addClass('pre-numbering').hide();
+                    $(this).addClass('has-numbering').parent().append($numbering);
+                    for (i = 1; i <= lines; i++) {
+                        $numbering.append($('<li/>').text(i));
+                    };
+                    $numbering.fadeIn(1700);
+                });
+            });
+        </script>
+   
+</div>
+
+
+
+
+<!-- Baidu Button BEGIN -->
+
+
+
+
+<div class="bdsharebuttonbox tracking-ad" style="float: right;" data-mod="popu_172">
+<a href="#" class="bds_more" data-cmd="more" style="background-position:0 0 !important; background-image: url(images/icons_0_16.png) !important"></a>
+<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"  style="background-position:0 -52px !important"></a>
+<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"style="background-position:0 -104px !important"></a>
+<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"style="background-position:0 -260px !important"></a>
+<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"style="background-position:0 -208px !important"></a>
+<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"style="background-position:0 -1612px !important" ></a>
+</div>
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<!-- Baidu Button END -->
+
+   <link rel="stylesheet" href="css/blog_detail.css" />
+
+    
+<!--172.16.140.14-->
+
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=1536434" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+
+ 
+
+
+        <div id="digg" ArticleId="54312659" >
+            <dl id="btnDigg" class="digg digg_disable"  onclick="btndigga();">
+               
+                 <dt>顶</dt>
+                <dd>0</dd>
+            </dl>
+           
+              
+            <dl id="btnBury" class="digg digg_disable"  onclick="btnburya();">
+              
+                  <dt>踩</dt>
+                <dd>0</dd>               
+            </dl>
+            
+        </div>
+     <div class="tracking-ad" data-mod="popu_222"><a href="javascript:void(0);" >&nbsp;</a>   </div>
+    <div class="tracking-ad" data-mod="popu_223"> <a href="javascript:void(0);" >&nbsp;</a></div>
+    <script type="text/javascript">
+                function btndigga() {
+                    $(".tracking-ad[data-mod='popu_222'] a").click();
+                }
+                function btnburya() {
+                    $(".tracking-ad[data-mod='popu_223'] a").click();
+                }
+            </script>
+
+   <ul class="article_next_prev">
+                <li class="next_article"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian']);location.href='/u014697091/article/details/54883134';">下一篇</span><a href="/u014697091/article/details/54883134" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian'])">CSDN-markdown编辑器测试</a></li>
+    </ul>
+
+    <div style="clear:both; height:10px;"></div>
+
+
+        <div class="similar_article"  style="display:none">
+                <h4>我的同类文章</h4>
+                <div class="similar_c"style="margin:20px 0px 0px 0px">
+                    <div class="similar_c_t">
+                                <label class="similar_cur">
+                                    <span  style="cursor:pointer"  onclick="GetCategoryArticles('6673576','u014697091','foot','54312659');">ft<em>（1）</em></span>
+                                </label>
+                    </div>
+                   
+                    <div class="similar_wrap tracking-ad" data-mod="popu_141"  style="max-height:195px;">
+                        <a href="http://blog.csdn.net" style="display:none">http://blog.csdn.net</a>
+                        <ul class="similar_list fl">                          
+                        </ul>
+
+                        <ul class="similar_list fr">                           
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+    <script  type="text/javascript">
+        $(function () {
+            GetCategoryArticles('6673576', 'u014697091','foot','54312659');
+        });
+    </script>
+      
+</div>
+
+     <div>
+             <ins data-revive-zoneid="206" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins> 
+    </div>
+
+<div id="suggest"></div>
+         <script  language="javascript" type='text/javascript'>     
+             $(function(){
+                 $.get("/u014697091/svc/GetSuggestContent/54312659",function(data){
+                     $("#suggest").html(data);
+                 });     
+             });             
+         </script>  
+
+
+<style>
+.blog-ass-articl dd {
+color: #369;
+width: 99%; /*修改行*/
+float: left;
+overflow: hidden;
+font: normal normal 12px/23px "SimSun";
+height: 23px;
+margin: 0;
+padding: 0 0 0 10px;
+margin-right: 30px;
+background: url(images/blog-dot-red3.gif) no-repeat 0 10px;
+}
+</style>
+
+ <link rel="stylesheet" href="css/replace.css"/>
+
+<div id="relate" data-mod="popu_218"  class="tracking-ad">
+        <div class="relate_t">
+            <h3><span>参考知识库</span></h3>
+        </div>
+        <div class="relate_c">
+        </div>
+</div>
+ 
+
+<dl class="blog-ass-articl" id="res-relatived" > 
+    <div class="embody embody_b" id="libkeyparent"  style="display:none">
+            <span class="embody_t">更多资料请参考：</span>
+            <div class="embody_c" id="libkey"></div>
+    </div>
+
+
+     <dt><span>猜你在找</span></dt>    
+
+
+   
+
+
+    <div id="adCollege" style="width: 42%;float: left;"> 
+        <script src="js/job_reco.js" type="text/javascript"></script> 
+        <script type="text/javascript">
+            csdn.position.showEdu({
+                sourceType: "blog",
+                searchType: "detail",
+                searchKey: "54312659",
+                username: "",
+                recordcount: "5",
+                containerId: "adCollege" //容器DIV的id。 
+            });
+        </script> 
+    </div>  
+
+    
+     <div id="res"  data-mod="popu_36"  class="tracking-ad" style="width: 42%;float: left;margin-right: 30px;"></div>
+   
+</dl>
+
+
+<script type="text/javascript">
+    $(function () {
+        setTimeout(function () {
+            var searchtitletags = '测试这个东西好不啦' + ',' + $("#tags").html();
+            searchService({
+                index: 'blog',
+                query: searchtitletags,
+                from: 5,
+                size: 5,
+                appendTo: '#res',
+                url: 'recommend',
+                his: 2,
+                client: "blog_cf_enhance",
+                tmpl: '<dd style="background:url(images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="#{ url }" title="#{ title }" strategy="#{ strategy }">#{ title }</a></dd>'
+            });
+        }, 500);
+    });    
+
+ </script>  
+
+
+    <div id="ad_cen">        
+                      <ins data-revive-zoneid="199" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+    </div>  
+
+    <!-- 广告位开始 -->
+    <ins data-revive-zoneid="72" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+    <!-- 广告位结束 -->
+
+<div class="comment_class">
+    <div id="comment_title" class="panel_head">
+        <span class="see_comment">查看评论</span><a name="comments"></a></div>
+    <div id="comment_list">
+    </div>
+    <div id="comment_bar">
+    </div>
+    <div id="comment_form">
+    </div>
+    <div class="announce">
+        * 以上用户言论只代表其个人观点，不代表CSDN网站的观点或立场<a name="reply"></a><a name="quote"></a></div>
+</div>
+
+<script type="text/javascript">
+    var fileName = '54312659';
+    var commentscount = 0;
+    var islock = false
+</script>
+<script type="text/javascript" src="js/comment.js"></script>
+    <div id="ad_bot">
+    </div>
+<div id="report_dialog">
+</div>
+
+<div id="d-top"  style="bottom:60px;">
+
+        <a id="quick-reply" class="btn btn-top q-reply" title="快速回复" style="display:none;">
+            <img src="picture/blog-icon-reply.png" alt="快速回复">
+        </a>    
+    <a id="d-top-a" class="btn btn-top backtop"  style="display: none;" title="返回顶部" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_huidaodingbu'])" style="">         
+         <img src="picture/top.png" alt="TOP">
+    </a>
+</div>
+<script type="text/javascript">
+    $(function ()
+    {
+        $("#ad_frm_0").height("90px");
+        
+        setTimeout(function(){
+            $("#ad_frm_2").height("200px");
+        },1000);    
+    });
+  
+</script>
+<style type="text/css">
+    .tag_list
+    {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid #D7CBC1;
+        color: #000000;
+        font-size: 12px;
+        line-height: 20px;
+        list-style: none outside none;
+        margin: 10px 2% 0 1%;
+        padding: 1px;
+    }
+    .tag_list h5
+    {
+        background: none repeat scroll 0 0 #E0DBD3;
+        color: #47381C;
+        font-size: 12px;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 5px;
+        margin: 0;
+    }
+    .tag_list h5 a
+    {
+        color: #47381C;
+    }
+    .classify
+    {
+        margin: 10px 0;
+        padding: 4px 12px 8px;
+    }
+    .classify a
+    {
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+</style>
+
+
+<div class="tag_list" style="display:none"></div>
+  <script  language="javascript" type='text/javascript'>     
+      $(function(){
+              setTimeout(function(){
+                  $.get("/u014697091/svc/GetTagContent",function(data){
+                      $(".tag_list").html(data).show();
+                  });     
+              });
+          },500);                       
+ </script> 
+
+
+<div id="pop_win" style="display:none ;position: absolute; z-index: 10000; border: 1px solid rgb(220, 220, 220); top: 222.5px; left: 630px; opacity: 1; background: none 0px 0px repeat scroll rgb(255, 255, 255);">
+    
+</div>
+<div id="popup_mask"></div>
+<style>
+    #popup_mask
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 9999;
+        left: 0px;
+        top: 0px;
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+        display: none;
+    }
+
+</style>
+
+
+
+
+<script type="text/javascript">
+    $(function(){
+        setTimeout(function(){
+            $(".comment_body:contains('回复')").each(function(index,item){
+                var u=$(this).text().split('：')[0].toString().replace("回复","")
+                var thisComment=$(this);
+                if(u)
+                {
+                    $.getJSON("https://passport.csdn.net/get/nick?callback=?", {users: u}, function(a) {
+                        if(a!=null&&a.data!=null&&a.data.length>0)
+                        {
+                            nick=a.data[0].n; 
+                            if(u!=nick)
+                            {
+                                thisComment.text(thisComment.text().replace(u,nick));  
+                            }
+                        }       
+                    });  
+                }
+            });         
+
+        },200);  
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },5000);
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },10000);
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },15000);
+        
+        setTimeout(function(){
+            $("a img[src='http://js.tongji.linezing.com/stats.gif']").parent().css({"position":"absolute","left":"50%"});
+        },300);
+    });
+
+    function loginbox(){
+        var $logpop=$("#pop_win");
+        $logpop.html('<iframe src="https://passport.csdn.net/account/loginbox?service=http://static.blog.csdn.net/callback.htm" frameborder="0" height="600" width="400" scrolling="no"></iframe>');
+
+        $('#popup_mask').css({
+            opacity: 0.5,
+            width: $( document ).width() + 'px',
+            height:  $( document ).height() + 'px'
+        });
+        $('#popup_mask').css("display","block");
+ 
+        $logpop.css( {
+            top: ($( window ).height() - $logpop.height())/ 2  + $( window 
+       ).scrollTop() + 'px',
+            left:($( window ).width() - $logpop.width())/ 2
+        } );
+ 
+        setTimeout( function () {
+            $logpop.show();
+            $logpop.css( {
+                opacity: 1
+            } );
+        }, 200 );
+ 
+        $('#popup_mask').unbind("click");
+        $('#popup_mask').bind("click", function(){
+            $('#popup_mask').hide();
+            var $clopop = $("#pop_win");
+            $("#common_ask_div_sc").css("display","none");
+            $clopop.css( {
+                opacity: 0
+            } );
+            setTimeout( function () {
+                $clopop.hide();
+            }, 350 );
+            return false;
+        });
+    }   
+
+</script>
+ <script language="javascript" type="text/javascript" src="js/async_new.js"></script>      
+
+
+
+
+                        <div class="clear">
+                        </div>
+                    </div>                   
+                
+            </div>
+                   
+           <div id="side">
+               
+    <div class="side">
+<div id="panel_Profile" class="panel">
+<ul class="panel_head"><span>个人资料</span></ul>
+<ul class="panel_body profile">
+<div id="blog_userface">
+    <a href="http://my.csdn.net/u014697091" target="_blank">
+    <img src="picture/1_u014697091.jpg" title="访问我的空间" style="max-width:90%"/>
+    </a>
+    <br />
+    <span><a href="http://my.csdn.net/u014697091" class="user_name" target="_blank">u014697091</a></span>
+</div>
+<div class="interact">
+
+    <a href="javascript:void(0);" class="attent" id="span_add_follow" title="[加关注]"></a>
+
+ <a href="javascript:void(0);" class="letter"  title="[发私信]" onclick="window.open('http://msg.csdn.net/letters/model?receiver=u014697091','_blank','height=350,width=700');_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_sixin'])"></a>  
+</div>
+<div id="blog_medal">
+                <div id="bms_box">
+               </div>
+</div>
+<ul id="blog_rank">
+    <li>访问：<span>28次</span></li>
+    <li>积分：<span>20</span> </li>    
+    <li >等级： <span style="position:relative;display:inline-block;z-index:1" >
+            <img src="picture/blog1.png" alt="" style="vertical-align: middle;" id="leveImg">
+            <div id="smallTittle" style=" position: absolute;  left: -24px;  top: 25px;  text-align: center;  width: 101px;  height: 32px;  background-color: #fff;  line-height: 32px;  border: 2px #DDDDDD solid;  box-shadow: 0px 2px 2px rgba (0,0,0,0.1);  display: none;   z-index: 999;">
+            <div style="left: 42%;  top: -8px;  position: absolute;  width: 0;  height: 0;  border-left: 10px solid transparent;  border-right: 10px solid transparent;  border-bottom: 8px solid #EAEAEA;"></div>
+            积分：20 </div>
+        </span>  </li>
+    <li>排名：<span>千里之外</span></li>
+</ul>
+<ul id="blog_statistics">
+    <li>原创：<span>2篇</span></li>
+    <li>转载：<span>0篇</span></li>
+    <li>译文：<span>0篇</span></li>
+    <li>评论：<span>0条</span></li>
+</ul>
+</ul>
+</div>
+
+
+<div class="panel" id="panel_Search">
+    <ul class="panel_head"><span>文章搜索</span></ul>
+    <ul class="panel_body">
+        <form id="frmSearch" action="http://so.csdn.net/search" class="form_search" target="_blank">
+        <span><input id="inputSearch" type="text" class="blogsearch" title="请输入关键字" /></span>
+        <input id="btnSubmit" type="button" value="搜索" title="search in blog" />
+        <input type="hidden" name="q" id="inputQ" />
+        <input type="hidden" name="t" value="blog" />
+        <a id="btnSearchBlog" target="_blank"></a>
+        </form>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#btnSubmit").click(function () {           
+            search();
+        });
+
+        $("#frmSearch").submit(function () {
+            search();
+            return false;
+        });
+
+        function search()
+        {
+            var url = "http://so.csdn.net/so/search/s.do?q=" + encodeURIComponent($("#inputSearch").val()) + "&u=" + username + "&t=blog";
+            window.location.href = url;
+        }   
+    });
+</script><div id="panel_Category" class="panel">
+<ul class="panel_head"><span>文章分类</span></ul>
+<ul class="panel_body">    
+                 <li>
+                    <a href="/u014697091/article/category/6673576" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">ft</a><span>(1)</span>
+                </li>
+</ul>
+</div><div id="panel_Archive" class="panel">
+<ul class="panel_head"><span>文章存档</span></ul>
+<ul class="panel_body">
+<div id="archive_list">
+<!--归档统计-->
+<li><a href="/u014697091/article/month/2017/02">2017年02月</a><span>(1)</span></li><li><a href="/u014697091/article/month/2017/01">2017年01月</a><span>(1)</span></li>
+</div>
+</ul>
+</div>
+<div id="hotarticls" class="panel">
+<ul class="panel_head">
+    <span>       
+阅读排行    </span>
+</ul>
+
+<ul class="panel_body itemlist">
+<li>
+<a href="/u014697091/article/details/54312659" title="测试这个东西好不啦">测试这个东西好不啦</a><span>(24)</span>
+</li>
+<li>
+<a href="/u014697091/article/details/54883134" title="CSDN-markdown编辑器测试">CSDN-markdown编辑器测试</a><span>(2)</span>
+</li>
+</ul>
+</div>
+<div id="hotarticls2" class="panel">
+<ul class="panel_head"><span>评论排行</span></ul>
+<ul class="panel_body itemlist">
+<li>
+<a href="/u014697091/article/details/54312659" title="测试这个东西好不啦">测试这个东西好不啦</a><span>(0)</span>
+</li>
+<li>
+<a href="/u014697091/article/details/54883134" title="CSDN-markdown编辑器测试">CSDN-markdown编辑器测试</a><span>(0)</span>
+</li>
+</ul>
+</div>
+<div id="homepageArticles" class="panel tracking-ad" data-mod="popu_4">
+<ul class="panel_head"><span>推荐文章</span></ul>
+<ul class="panel_body" id="ad_commend">
+<ul>
+<li><a href="http://blog.csdn.net/mmoaay/article/details/54562045" target="_blank">* 造轮子 | 如何设计一个面向协议的 iOS 网络请求库</a></li>
+<li><a href="http://blog.csdn.net/guolin_blog/article/details/53122387" 
+target="_blank">* Android新特性介绍，ConstraintLayout完全解析</a></li>
+<li><a href="http://blog.csdn.net/lmj623565791/article/details/54882693"target="_blank">* Android 热修复 Tinker接入及源码浅析</a></li>
+<li><a href="http://blog.csdn.net/zwgdft/article/details/54728677" target="_blank">* 创业公司做数据分析（六）数据仓库的建设</a></li>
+<li><a href="http://blog.csdn.net/chenssy/article/details/54883355" 
+target="_blank">* 【死磕Java并发】-----深入分析synchronized的实现原理</a></li>
+
+
+</ul></ul>
+</div>
+
+
+    </div>
+    <div class="clear">
+    </div>
+
+
+                 <!-- 广告位开始 --> 
+                    <ins data-revive-zoneid="189" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins> 
+                <!-- 广告位结束 -->
+
+           </div>   
+
+            <div class="clear">
+            </div>
+        </div>
+
+        
+
+<script type="text/javascript" src="js/cnick.js"></script>
+<script type="text/javascript" src="js/newblog.min.js"></script>
+
+
+<script type="text/javascript" src="js/showblogmedal.js"></script>
+<script type="text/javascript" src="js/javascript1.js"></script>
+
+    <script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript">document.write("<img src=picture/pv.aspx border=0 width=0 height=0>");</script>
+<script type="text/javascript" src="js/counter.js"></script>
+<script type="text/javascript" src="js/ad-blog.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function __get_code_toolbar(snippet_id) {
+            return $("<span class='tracking-ad' data-mod='popu_167'><a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "' target='_blank' title='在CODE上查看代码片'  style='text-indent:0;'><img src='picture/code_ico.png' width=12 height=12 alt='在CODE上查看代码片' style='position:relative;top:1px;left:2px;'/></a></span>"
+                    + "<span class='tracking-ad' data-mod='popu_170'><a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "/fork' target='_blank' title='派生到我的代码片' style='text-indent:0;'><img src='picture/ico_fork.svg' width=12 height=12 alt='派生到我的代码片' style='position:relative;top:2px;left:2px;'/></a></span>");
+        }
+        
+        $("[code_snippet_id]").each(function () {
+            __s_id = $(this).attr("code_snippet_id");
+            if (__s_id != null && __s_id != "" && __s_id != 0 && parseInt(__s_id) > 70020) {
+                __code_tool = __get_code_toolbar(__s_id);
+                $(this).prev().find(".tools").append(__code_tool);
+            }
+        });
+
+        $(".bar").show();
+    });
+</script>
+
+
+
+
+
+    </div>
+      <!--new top-->
+    
+    <script id="csdn-toolbar-id" btnId="header_notice_num" wrapId="note1" count="5" subCount="5" type="text/javascript" src="js/toolbar.js"></script>
+     <!--new top-->
+   
+    <link href="css/ask_float_block.css" type="text/css" rel="stylesheet" />
+    <script language='JavaScript' type='text/javascript' src='js/wmd.js'></script>
+    <script language='JavaScript' type='text/javascript' src='js/showdown.js'></script>
+    <script language='JavaScript' type='text/javascript' src='js/prettify.js'></script>
+    <script language='JavaScript' type='text/javascript' src='js/ask_float_block.js'></script>
+   
+
+   
+
+  <div id="a52b5334d" style="width: 1px; height: 1px; display: none;">
+                    <script id="adJs52b5334"></script>
+                    <script>document.getElementById("adJs52b5334").src = "http://ads.csdn.net/js/opt/52b5334.js?t=" + Math.random();</script>
+   </div>
+
+    <link rel="stylesheet" href="css/blog_code.css" />
+    <script type="text/javascript" src="js/savetocode.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+
+     <link rel="stylesheet" href="css/fa.css" />
+
+    <div class="pop_CA_cover"  style="display:none"></div>
+    <div class="pop pop_CA"  style="display:none">
+          <div class="CA_header">
+            收藏助手
+            <span class="cancel_icon"  id="fapancle"  onclick="$('.pop_CA').hide();$('.pop_CA_cover').hide();"></span>
+          </div>
+          <iframe src="" id="fa" frameborder="0" width="100%" height="360"  scrolling="no" />
+    </div>
+</body>
+</html>   
+ 

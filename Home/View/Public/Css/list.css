@@ -1,0 +1,279 @@
+
+body{
+	background: #EEEFF1
+}
+
+label{
+	cursor: pointer;
+}
+
+nav{
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 1px 1px #E5E5E5;
+}
+
+nav .left{
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+}
+
+nav .center{
+	width: 800px;
+	height: 100px;
+}
+
+nav .center .search{
+	width: 576px;
+	margin: 0 auto;
+	margin-top: 32px;
+}
+
+nav .center .search input{
+	width: 480px;
+	height: 35px;
+	border:1px solid #ddd;
+	border-right: none;
+	padding-left: 5px;
+	vertical-align:middle;
+	border-top-left-radius:2px; 
+	border-bottom-left-radius:2px; 
+}
+
+nav .center .search .sear_butt{
+	width: 90px;
+	height: 37px;
+	border:1px solid #ddd;
+	background: #fff;
+	padding-left:20px; 
+	background: url('../icon/sear.png') no-repeat 10px center;
+	vertical-align:middle;
+	border-top-right-radius:2px; 
+	border-bottom-right-radius:2px;
+	position: relative;
+	left: -1px; 
+}
+
+nav .right{
+	width: 200px;
+	height: 100px;
+}
+
+nav .right button{
+	width: 145px;
+	height: 35px;
+	background: #FF555A;
+	color: #fff;
+	border: none;
+	margin-top: 32px;
+	border-radius: 2px;
+}
+
+.selnav{
+	padding: 20px 15px;
+	border:1px solid #ddd;
+	background: #fff;
+	font-size: 12px;
+	margin-top:10px; 
+}
+
+.selnav a:hover{
+	color:#FF555A;
+}
+
+.selnav .left{
+	width: 70px;
+	line-height: 25px;
+}
+
+.selnav .right{
+	width: 1098px;
+	line-height: 25px;
+}
+
+.selnav .right dl dt{
+	float: left;
+	width: 70px;
+}
+
+.selnav .right dl dd{
+	float: left;
+	width: 1000px;
+}
+
+.selnav .right ul{
+	width: 950px;
+}
+
+.selnav .right .more a{
+	color: #FF555A;
+}
+
+.selnav .right ul li{
+	float: left;
+	padding:0 10px;
+}
+
+.selnav .right .sel{
+	color: #FF555A;
+}
+
+.selnav .right .mores{
+	height: 25px;
+	overflow: hidden;
+}
+
+.main{
+	padding-top: 20px;
+}
+
+.main .left{
+	width: 970px;
+}
+
+.main .right .adv{
+	width: 200px;
+	height: 240px;
+	background: #C5C5C5;
+	margin-bottom: 15px; 
+}
+
+.cen-chose{
+	background: #fff;
+	border:1px solid #ddd;
+	padding:10px 15px; 
+	/*line-height: 30px;*/
+}
+
+.cen-chose .l{
+	width: 200px;
+	margin-top:2px; 
+}
+
+.cen-chose .l li{
+	float: left;
+	width: 85px;
+	margin-right: 15px;
+}
+
+.cen-chose .l label input{
+	margin-top:-2px;
+}
+
+.cen-chose .r{
+	width: 200px;
+}
+
+.cen-chose .r .tw{
+	background: url('../icon/nav-icon.png') no-repeat center -32px;
+	/*-4px -3px;*/
+}
+
+.cen-chose .r .tw:hover{
+	background: url('../icon/nav-icon.png') no-repeat center -3px;
+}
+
+.cen-chose .r .wz{
+	background: url('../icon/nav-icon.png') no-repeat center -90px;
+	border-right: 1px solid #ddd;
+}
+
+.cen-chose .r .wz:hover{
+	background: url('../icon/nav-icon.png') no-repeat center -61px;
+}
+
+.cen-chose .r li{
+	cursor: pointer;
+	float: right;
+	height: 26px;
+	width: 26px;
+	padding-left:30px; 
+}
+
+.cen-chose .r label input{
+	margin-top:-2px;
+}
+
+.main-list{
+	background: #fff;
+	margin-top:10px;
+	border:1px solid #ddd; 
+	padding:0 15px; 
+}
+
+.main-list ul li{
+	height: 120px;
+	padding:15px 0; 
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.main-list ul li .left{
+	width: 180px;
+	position: relative;
+}
+
+.main-list ul li .center{
+	padding-left: 15px;
+}
+
+.main-list ul li .center .name-box{
+	height: 40px;
+	line-height: 30px;
+}
+
+.main-list ul li .center .name:hover{
+	color: #FF555A;
+}
+
+.main-list ul li .center .name{
+	font-size: 18px;
+}
+
+.main-list ul li .center .tag{
+	border:1px solid #999;
+	font-size: 12px;
+	color: #999;
+	padding:0 5px; 
+	border-radius: 2px;
+}
+
+.main-list .address{
+	height: 50px;
+	line-height: 50px;
+	color: #999;
+}
+
+.main-list .other{
+	color: #999;
+}
+
+.main-list .right{
+	width: 568px;
+	text-align: right;
+	color:#FF555A;
+	font-size: 16px;
+}
+
+.page{
+	padding-top: 60px;
+	height: 160px;
+	text-align: center;
+}
+
+.page .sel{
+	background: #FF555A;
+	color:#fff;
+}
+
+.page a{
+	display: inline-block;
+	text-align: center;
+	padding:0 7px; 
+	height: 25px;
+	background: #fff;
+	border:1px solid #ddd;
+	margin-right:7px; 
+}
