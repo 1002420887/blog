@@ -45,8 +45,8 @@
 <script type="text/javascript">
 	//退出登录
 	function loginOut(){
-		$.post("{:U u='Admin/Login/loginOut'}", null ,function(re){
-			location.href = "{:U u='Admin/Login/index'}";
+		$.post("{:U('Admin/Login/loginOut')}", null ,function(re){
+			location.href = "{:U('Admin/Login/index')}";
 		});
 	}
 </script>

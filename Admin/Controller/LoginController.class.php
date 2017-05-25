@@ -15,7 +15,7 @@ class LoginController extends Controller{
 			$uname = I('uname');
 			$pwd   = md5(I('pwd'));
 
-			if($info = $data->where('uname="'.$uname.'" and pwd="'.$pwd.'"')->find()){
+			if($info = $data->where(array('uname'=>$uname,'pwd'=>$pwd))->find()){
 
 				//存入session
 				$arr = array(
@@ -31,8 +31,8 @@ class LoginController extends Controller{
 					'this_ip'    => $_SERVER['REMOTE_ADDR'],
 					'last_ip'    => $info['this_ip'],
 					);
-				$data->where('uid='.$info['uid'])->edit($loginArr);
-				$data->where('uid='.$info['uid'])->setInc('num');
+				$data->where(array('uid'=>$info['uid']))->setField($loginArr);
+				$data->where(array('uid'=>$info['uid']))->setInc('num');
 
 				$this->ajaxReturn('succeed');
 			}

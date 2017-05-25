@@ -1,9 +1,9 @@
-{:php}
+<php>
 
 $field = '*,concat(pid,"/",id) as path';
 $order = 'path,id';
 
-$list = M('auth_rule')->field($field)->where('menu=1')->order($order)->select();
+$list = M('auth_rule')->field($field)->where(array('menu'=>1))->order($order)->select();
 
 foreach($list as $k => $v){
 	$arr[$v['fid']][] = $v;
@@ -48,4 +48,4 @@ function str(){
 	echo 888;
 }
 
-{:/php}
+</php>

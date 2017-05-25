@@ -27,10 +27,10 @@
 <body>
 <div class="page-container">
 	<p class="f-20 text-success">欢迎使用 SimePHP <span class="f-14">v1.0</span> PHP框架！</p>
-	<p>登录次数：{:$info.num} </p>
-	<p>上次登录IP：{:$info.last_ip}  上次登录时间：{:DATE p='Y-m-d H:i:s' time=$info.last_login}</p>
+	<p>登录次数：{$info.num} </p>
+	<p>上次登录IP：{$info.last_ip}  上次登录时间：{$info.last_login|date="Y-m-d H:i:s",###}</p>
 	
-	<form action="{:U u='Admin/Index/upfile'}" method="post" enctype="multipart/form-data">
+	<form action="{:U('Admin/Index/upfile')}" method="post" enctype="multipart/form-data">
 		<input type="file" name="file[]" multiple>
 		<input type="file" name="files">
 		<button type="submit"> 提交 </button>
@@ -118,27 +118,27 @@
 			</tr>
 			<tr>
 				<td>PHP 版本 </td>
-				<td>{:$ven} &nbsp; <a class="acol" href="{:U u='Admin/Index/phpInfo'}" target="_blank"> phpInfo();</a></td>
+				<td>{$ven} &nbsp; <a class="acol" href="{:U('Admin/Index/phpInfo')}" target="_blank"> phpInfo();</a></td>
 			</tr>
 			<tr>
 				<td>本文件所在文件夹 </td>
-				<td>{:$dir}</td>
+				<td>{$dir}</td>
 			</tr>
 			<tr>
 				<td>服务器操作系统 </td>
-				<td>{:$os}</td>
+				<td>{$os}</td>
 			</tr>
 			<tr>
 				<td>系统所在文件夹 </td>
-				<td>{:$sdir}</td>
+				<td>{$sdir}</td>
 			</tr>
 			<tr>
 				<td>服务器脚本超时时间 </td>
-				<td>{:$ctime}秒</td>
+				<td>{$ctime}秒</td>
 			</tr>
 			<tr>
 				<td>服务器当前时间 </td>
-				<td>{:$time}</td>
+				<td>{$time}</td>
 			</tr>
 			<tr>
 				<td>当前SessionID </td>
@@ -146,7 +146,7 @@
 			</tr>
 			<tr>
 				<td>当前系统用户名 </td>
-				<td>{:$info.uname}</td>
+				<td>{$info.uname}</td>
 			</tr>
 		</tbody>
 	</table>

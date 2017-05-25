@@ -1,7 +1,7 @@
 
-{:include file="../Public/head.html"}
+<include file="Public:head" />
 
-<title>管理员管理</title>
+<title>用户管理</title>
 
 <style type="text/css">
 	.active{
@@ -14,15 +14,15 @@
 
 </head>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 管理员管理 <span class="c-gray en">&gt;</span> 管理员管理 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 用户管理 <span class="c-gray en">&gt;</span> 用户管理 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
 	<div class="cl pd-5 bg-1 bk-gray"> 
 		<span class="l">
-			<a href="javascript:delAdms();" class="btn btn-danger radius">
+			<a href="javascript:delUsers();" class="btn btn-danger radius">
 				<i class="Hui-iconfont">&#xe6e2;</i> 批量删除
 			</a> 
-			<a href="javascript:;" onclick="addAdm('添加管理员','{:U u='Admin/Adm/addAdm'}','','530')" class="btn btn-primary radius">
-				<i class="Hui-iconfont">&#xe600;</i> 添加管理员
+			<a href="javascript:;" onclick="addUser('添加用户','{:U('Admin/User/addUser')}','','490')" class="btn btn-primary radius">
+				<i class="Hui-iconfont">&#xe600;</i> 添加用户
 			</a>
 		</span> 
 		<span class="r">共有数据：<strong>{:$pgnum}</strong> 条</span> 
@@ -30,7 +30,7 @@
 	<table class="table table-border table-bordered table-bg">
 		<thead>
 			<tr>
-				<th scope="col" colspan="8">角色管理</th>
+				<th scope="col" colspan="8">用户管理</th>
 			</tr>
 			<tr class="text-l">
 				<th width="25"><input type="checkbox" name="" value=""></th>
@@ -38,7 +38,6 @@
 				<th>用户名</th>
 				<th>手机</th>
 				<th>邮箱</th>
-				<th>角色</th>
 				<th>状态</th>
 				<th width="100">操作</th>
 			</tr>
@@ -52,7 +51,6 @@
 					<td>{:$v.uname}</td>
 					<td>{:$v.tel}</td>
 					<td>{:$v.email}</td>
-					<td>{:$v.title}</td>
 					<td>
 						{:if $v.state eq 1} 
 							<span class="label label-success radius">已启用</span>
@@ -66,10 +64,10 @@
 						{:else} 
 							<a style="text-decoration:none" onclick="eidtSta(this,{:$v.uid})" href="javascript:;" title="启用"><i class="Hui-iconfont">&#xe615;</i></a>
 						{:/if}
-						<a title="编辑" href="javascript:;" onclick="editAdm('管理员编辑','{:U u='Admin/Adm/editAdm' p='/uid/'|cat:$v.uid}','','','530')" class="ml-5" style="text-decoration:none">
+						<a title="编辑" href="javascript:;" onclick="editUser('用户编辑','{:U u='Admin/User/editUser' p='/uid/'|cat:$v.uid}','','','490')" class="ml-5" style="text-decoration:none">
 							<i class="Hui-iconfont">&#xe6df;</i>
 						</a>
-						<a title="删除" href="javascript:;" onclick="delAdm(this,{:$v.uid},'{:$v.name}')" class="ml-5" style="text-decoration:none">
+						<a title="删除" href="javascript:;" onclick="delUser(this,{:$v.uid},'{:$v.name}')" class="ml-5" style="text-decoration:none">
 							<i class="Hui-iconfont">&#xe6e2;</i>
 						</a>
 					</td>
@@ -78,47 +76,45 @@
 		</tbody>
 	</table>
 	{:$page}
-	
 
 </div>
-{:include file="../Public/pubjs.html"}
+<include file="Public:pubjs" />
 <script type="text/javascript">
 
-//添加管理员
-function addAdm(title,url,w,h){
+//添加用户
+function addUser(title,url,w,h){
 	layer_show(title,url,w,h);
 }
 
-//编辑角色
-function editAdm(title,url,uid,w,h){
+//编辑用户
+function editUser(title,url,uid,w,h){
 	layer_show(title,url,w,h);
 }
 
-//禁用管理员
+//禁用用户
 function eidtSta(obj,uid){
 
 	$.fn.delData({
-		url   : "{:U u='Admin/Adm/eidtSta'}",
+		url   : "{:U u='Admin/User/eidtSta'}",
 		data  : {uid:uid},
 		title : '设置状态',
 	})
 }
 
-
-//删除角色
-function delAdm(obj,uid,tips){
+//删除用户
+function delUser(obj,uid,tips){
 	layer.confirm('删除须谨慎，确认要删除<span class="col_tips"> '+tips+' </span>吗？',function(index){
 
 		$.fn.delData({
-			url   : "{:U u='Admin/Adm/delAdm'}",
+			url   : "{:U u='Admin/User/delUser'}",
 			data  : {uid:uid},
-			title : '删除管理员',
+			title : '删除用户',
 		})
 	});
 }
 
-//批量删除角色
-function delAdms(){
+//批量删除用户
+function delUsers(){
 
 	var data = {};
 	$("input[name='id']:checked").each(function(k){
@@ -127,7 +123,7 @@ function delAdms(){
 	
 	layer.confirm('删除须谨慎，确认要删除吗？',function(index){
 		$.fn.delData({
-			url   : "{:U u='Admin/Adm/delAdms'}",
+			url   : "{:U u='Admin/User/delUsers'}",
 			data  : {uid:data},
 			title : '删除权限',
 		})

@@ -1,5 +1,4 @@
-
-{:include file="../Public/head.html"}
+<include file="Public:head" />
 <link rel="stylesheet" type="text/css" href="/Public/h-ui/lib/Switch/bootstrapSwitch.css" />
 <link rel="stylesheet" type="text/css" href="/Public/h-ui/lib/icheck/icheck.css" />
 
@@ -12,18 +11,6 @@
 <body>
 <article class="page-container">
 	<form class="form form-horizontal ajaxUpload" id="form-admin-add">
-
-		<div class="row cl">
-			<label class="form-label col-sm-3"><span class="c-red">*</span>角色：</label>
-			<div class="formControls col-sm-6">
-				<select id="gro" name="gro">
-					<option value="0"> - 请选择 - </option>
-					{:foreach from=$gls item=v}
-						<option value="{:$v.id}"> {:$v.title} </option>
-					{:/foreach}
-				</select>
-			</div>
-		</div>
 
 		<div class="row cl">
 			<label class="form-label col-sm-3">状态：</label>
@@ -101,11 +88,11 @@
 </article>
 
 <!--_footer 作为公共模版分离出去--> 
-{:include file="../Public/pubjs.html"}
+<include file="Public:pubjs" />
 <!--/_footer /作为公共模版分离出去--> 
 <script type="text/javascript" src="/Public/h-ui/lib/Switch/bootstrapSwitch.js"></script>
 <script type="text/javascript" src="/Public/h-ui/lib/icheck/jquery.icheck.min.js"></script>
-{:include file="../Public/addpubjs.html"}
+<include file="Public:addpubjs" />
 
 <!--请在下方写此页面业务相关的脚本--> 
 <script type="text/javascript">
@@ -139,8 +126,8 @@ $("#form-admin-add").validate({
 		success:"valid",
 		submitHandler:function(){
 			$.fn.upData({
-				url   : "{:U u='Admin/Adm/addAdm'}",
-				title : '添加管理员',
+				url   : "{:U u='Admin/User/addUser'}",
+				title : '添加用户',
 			})
 		}
 	});
