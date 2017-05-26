@@ -1,14 +1,13 @@
-
 footer{
 	margin-top: 20px;
-	background: #fff;
+	background: #202121;
 	height: 170px;
 	text-align: center;
 	padding-top: 50px;
 }
 
 footer span{
-	color: #777;
+	color: #fff;
 }
 
 footer div{
@@ -16,7 +15,7 @@ footer div{
 }
 
 footer a{
-	color: #777;
+	color: #fff;
 	margin:0 5px; 
 	display: inline-block;
 }
