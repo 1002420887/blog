@@ -181,7 +181,7 @@ class AuthController extends CommonController{
 
 	//权限分组
 	function group(){
-		$data  = D('Auth_group');
+		$data  = D('AuthGroup');
 		
 		$field = '*';
 		$order = 'id';
@@ -216,7 +216,7 @@ class AuthController extends CommonController{
 
 	//修改角色
 	function editGro(){
-		$aData =  D('Auth_group');
+		$aData =  D('AuthGroup');
 		$id    =  I('id');
 
 		if(IS_POST){
@@ -243,7 +243,7 @@ class AuthController extends CommonController{
 	//删除权限
 	function delGro(){
 		if(IS_POST){
-			$aData = D('Auth_group');
+			$aData = D('AuthGroup');
 			$id    = I('id');
 
 			if($aData->where('id='.$id)->delete()){
@@ -282,7 +282,7 @@ class AuthController extends CommonController{
 	//设置权限
 	function setAuth(){
 		$rData = D('Auth_rule');
-		$gData = D('Auth_group');
+		$gData = D('AuthGroup');
 		$id    = I('id');
 
 		if(IS_POST){

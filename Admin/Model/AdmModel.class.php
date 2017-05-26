@@ -15,7 +15,6 @@ class AdmModel extends Model{
 		$list = $this
 				->field($field)
 				->alias("a")
-				->field($field)
 				->join("LEFT JOIN __AUTH_GROUP_ACCESS__ ag ON a.uid=ag.uid")
 				->join("LEFT JOIN __AUTH_GROUP__ g ON ag.group_id=g.id")
 				->limit($page->firstR().','.$page->larstR())

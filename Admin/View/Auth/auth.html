@@ -21,7 +21,7 @@
 			<a href="javascript:delAuths();" class="btn btn-danger radius">
 				<i class="Hui-iconfont">&#xe6e2;</i> 批量删除
 			</a> 
-			<a href="javascript:;" onclick="addAuth('添加权限节点','{:U u='Admin/Auth/addAuth'}','','435')" class="btn btn-primary radius">
+			<a href="javascript:;" onclick="addAuth('添加权限节点','{:U('Admin/Auth/addAuth')}','','435')" class="btn btn-primary radius">
 				<i class="Hui-iconfont">&#xe600;</i> 添加权限节点
 			</a>
 		</span> 
@@ -44,48 +44,53 @@
 		</thead>
 		<tbody>
 			
-			{:foreach from=$list item=v}
+			<foreach name='list' item='v' key='k'>
 				<tr class="text-l">
-					<td><input type="checkbox" value="{:$v.id}" name="id"></td>
-					<td>{:$v.path}
-						<!-- {:U u='Admin/Auth/editAuth' p='id='|cat:$v.id|cat:'q'} -->
+					<td><input type="checkbox" value="{$v['id']}" name="id"></td>
+					<td>{$v['path']}
 					</td>
 					<td>
-						{:if $v.menu eq 1}
+						<if condition="$v['menu'] eq 1">
 							<span class="colsp">
-						{:/if}
-						{:$v.nbsp} {:if $v.menu eq 1} |- {:else} ► {:/if} {:$v.title}
-						{:if $v.menu eq 1}
+						</if>
+						{$v['nbsp']}
+						<if condition="$v['menu'] eq 1">
+							|-
+						<else/>
+							►
+						</if>
+						{$v['title']}
+						<if condition="$v['menu'] eq 1">
 							</span>
-						{:/if}
-						
+						</if>
 					</td>
-					<td>{:$v.name}</td>
+					<td>{$v['name']}</td>
 					<td>
-						{:if $v.ajax eq 1}
+						<if condition="$v['ajax'] eq 1">
 							<span class="badge badge-primary radius">Yes</span>
-						{:/if}
+						</if>
 					</td>
 					<td>
-						{:if $v.menu eq 1}
+						<if condition="$v['menu'] eq 1">
 							<span class="badge badge-primary radius">Yes</span>
-						{:/if}
+						</if>
 					</td>
 					<td>
-						<a title="编辑" href="javascript:;" onclick="editAuth('权限编辑','{:U u='Admin/Auth/editAuth' p='/id/'|cat:$v.id}','','','435')" class="ml-5" style="text-decoration:none">
+						<a title="编辑" href="javascript:;" onclick="editAuth('权限编辑','{:U('Admin/Auth/editAuth',array('id'=>$v['id']))}','','','435')" class="ml-5" style="text-decoration:none">
 							<i class="Hui-iconfont">&#xe6df;</i>
 						</a>
-						<a title="删除" href="javascript:;" onclick="delAuth(this,{:$v.id},'{:$v.title}')" class="ml-5" style="text-decoration:none">
+						<a title="删除" href="javascript:;" onclick="delAuth(this,{$v.id},'{$v.title}')" class="ml-5" style="text-decoration:none">
 							<i class="Hui-iconfont">&#xe6e2;</i>
 						</a>
-						{:if $v.menu eq 1}
-							<a title="添加下级" href="javascript:;" onclick="addAuth('添加下级权限','{:U u='Admin/Auth/addAuth' p='/id/'|cat:$v.id}','','435')" class="ml-5" style="text-decoration:none">
+						<if condition="$v['menu'] eq 1">
+							<a title="添加下级" href="javascript:;" onclick="addAuth('添加下级权限','{:U('Admin/Auth/addAuth',array('id'=>$v['id']))}','','435')" class="ml-5" style="text-decoration:none">
 								添加下级
 							</a>
-						{:/if}
+						</if>
 					</td>
 				</tr>
-			{:/foreach}
+			</foreach>
+			
 		</tbody>
 	</table>
 	{:$page}
@@ -110,7 +115,7 @@ function delAuth(obj,id,tips){
 	layer.confirm('删除须谨慎，确认要删除<span class="col_tips"> '+tips+' </span>吗？',function(index){
 
 		$.fn.delData({
-			url   : "{:U u='Admin/Auth/delAuth'}",
+			url   : "{:U('Admin/Auth/delAuth')}",
 			data  : {id:id},
 			title : '删除权限',
 		})
@@ -129,7 +134,7 @@ function delAuths(){
 	layer.confirm('删除须谨慎，确认要删除吗？',function(index){
 
 		$.fn.delData({
-			url   : "{:U u='Admin/Auth/delAuths'}",
+			url   : "{:U('Admin/Auth/delAuths')}",
 			data  : {id:data},
 			title : '删除权限',
 		})
