@@ -1,14 +1,20 @@
 
 <?php
-$tuid   = session(C('WEB_SESSION'))['uid'];
-$tpname = session(C('WEB_SESSION'))['pname'];
+$tuid   = (int)session("bkHmUser.uid");
+$tpname = session("bkHmUser.pname");
 $hIndex = U('Index/index');
 $uIndex = U('User/Index/index');
 $uBlog  = U('User/Blog/index');
-
+// var_dump(session("hmUser"));
 $tnavh = '';
 if($tuid){
-	$tList = D('User_cla')->selAnav('uid = '.$tuid,'*,concat(pid,",",id) as path','path,id'); 
+	// $tList = D('User_cla')->selAnav('uid = '.$tuid,'*,concat(pid,",",id) as path','path,id'); 
+	$list = M('user_cla')->field('*,concat(pid,",",id) as path')->where('uid = '.$tuid)->order("path,id")->select();
+
+		//权限缩进
+		foreach ($list as $k => $v) {
+			$list[$k]['nbsp'] = str_repeat("&nbsp; &nbsp;",count(explode(',', $v['pid']))-1);
+		}
 
 	$tArr = '';
 

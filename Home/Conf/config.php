@@ -1,5 +1,6 @@
 <?php
 return array(
+  'WEB_SESSION_TPL'     =>  'hm',
   'TMPL_PARSE_STRING' =>array(
     '__BS__'=>__ROOT__.'/Public/bootstrap-3.3.0',
     '__CSS__'=>__ROOT__.'/'.MODULE_NAME.'/View/Public/Css',

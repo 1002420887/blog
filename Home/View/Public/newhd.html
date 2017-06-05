@@ -1,13 +1,99 @@
+<?php 
+$tuid   = session("bkHmUser.uid");
+
+?>
 <link rel="stylesheet" href="__CSS__/newhd.css">
 <div class="Chder">
 	<div class="ch_center">
 		<div class="ch_title">Pgs程序员博客</div>
 		<div class="ch_list">
 			<ul class="ch_ul clear">
-				<li><a>首页</a></li>
-				<li><a>工具</a></li>
+				<li class="hovers"><a class="a_on">首页</a></li>
+				<li class="hovers">
+					<a  class="a_on">PHP</a>
+					<div class="cg_ov">
+						<a class="er" href="">ThinkPHP</a>
+						<a class="er" href="">YII</a>
+						<a class="er" href="">LY框架</a>
+					</div>
+				</li>
+				<li class="hovers"><a  class="a_on">工具</a></li>
 			</ul>
 		</div>
-		<div class="ch_dz"></div>
+		<div class="ch_dz">
+		<if condition="$tuid eq true">
+
+			<button class="ch_dz_tc" onclick="loginOut();">退出</button>
+			<a class="my_bk" href="{:U('User/Blog/index')}">我的博客</a>
+		<else/>
+			<button class="ch_dz_dn" onclick="login();">登陆</button>
+			<button class="ch_dz_zhc" onclick="reg();">注册</button>
+		</if>
+		</div>
 	</div>
 </div>
+<div id="dialog-confirm" class="hide"></div>
+
+<!-- 引入公共js -->
+
+<include file="Public:pubjs"/>
+<!-- 引入弹窗js -->
+
+<include file="Public:artDialog"/>
+<!-- 标签js -->
+<script src="/Public/bootstrap-3.3.0/js/tooltip.js"></script>
+
+<!-- 页面js -->
+<script src="__JS__/header.js"></script>
+<!-- <script src="./js/navline.js"></script> -->
+ <script type="text/javascript">
+  $('#example').tooltip('show');
+
+  //注册
+  function reg(){
+    // var index = layer.load(0, {shade: false}); //0代表加载的风格，支持0-2
+    var a = tcADialog({
+      title:'新用户注册',
+      width:400,
+      url:"{:U('Login/reg')}"
+    });
+    a.add();
+    // layer.close(index);
+  }
+
+  //登陆
+  function login(){
+    var a = tcADialog({
+      title:'登陆',
+      width:400,
+      url:"{:U('Login/login')}"
+    });
+    a.add();
+  }
+
+  //退出登陆
+  function loginOut(){
+    $.ajax({
+         type  : 'POST',
+         url   : "{:U('Login/loginOut')}" ,
+         async : true,   
+        success : function(re){
+            location.reload();
+        }
+    });
+  }
+
+	$(document).ready(function(){
+		$(".hovers").hover(function(){
+
+			$(this).children('.cg_ov').slideDown();
+
+		},function(){
+			$(this).children('.cg_ov').stop(true,true).hide();
+			$(this).children('.cg_ov').slideUp();
+
+		});
+		
+	  
+	});	
+</script>

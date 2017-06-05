@@ -16,226 +16,30 @@
                 <div class="action">
                     <h4 class="action_title"><a>热门文章</a></h4>
                     <ul class="ulOns">
+                    <foreach name="list" item="v">
                         <li class="action_list">
                             <div class="list_cenetr clear">
                                <div class="in_img"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
                                <div class="in_body">
                                   <ul>
-                                      <li class="li_tit"><a href="">thinkphp点击图片刷新验证码</a></li>
+                                      <li class="li_tit"><a href="">{$v['title']}</a></li>
                                       <li class="li_body">
-                                      本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候
+                                      {$v['content']}
                                       </li>
                                       <li class="li_foot">
                                           <ul class="foot_li">
-                                              <li class="foot_time">2017-05-23</li>
-                                              <li class="foot_acter">作者：雷公</li>
-                                              <li class="foot_pin">评论：80</li>
-                                              <li class="foot_look">浏览：10000000</li>
-                                              <li class="foot_class">程序开发</li>
+                                              <li class="foot_time"><i class="Hui-iconfont">&#xe690;</i> {$v['time']|date="Y-m-d",###}</li>
+                                              <li class="foot_acter"><i class="Hui-iconfont">&#xe697;</i> {$v['zan']}赞</li>
+                                              <li class="foot_pin"><i class="Hui-iconfont">&#xe622;</i> <a href="">{$v['cnum']}评论</a></li>
+                                              <li class="foot_look"><i class="Hui-iconfont">&#xe725;</i> {$v['rnum']}次</li>
+                                              <li class="foot_class">{$v['name']}</li>
                                           </ul>
                                       </li>
                                   </ul>
                                </div>
                             </div>
                         </li>
-                        <li class="action_list">
-                            <div class="list_cenetr clear">
-                               <div class="in_img"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
-                               <div class="in_body">
-                                  <ul>
-                                      <li class="li_tit"><a href="">thinkphp点击图片刷新验证码</a></li>
-                                      <li class="li_body">
-                                      本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候
-                                      </li>
-                                      <li class="li_foot">
-                                          <ul class="foot_li">
-                                              <li class="foot_time">2017-05-23</li>
-                                              <li class="foot_acter">作者：雷公</li>
-                                              <li class="foot_pin">评论：80</li>
-                                              <li class="foot_look">浏览：10000000</li>
-                                              <li class="foot_class">程序开发</li>
-                                          </ul>
-                                      </li>
-                                  </ul>
-                               </div>
-                            </div>
-                        </li>
-                        <li class="action_list">
-                            <div class="list_cenetr clear">
-                               <div class="in_img"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
-                               <div class="in_body">
-                                  <ul>
-                                      <li class="li_tit"><a href="">thinkphp点击图片刷新验证码</a></li>
-                                      <li class="li_body">
-                                      本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候
-                                      </li>
-                                      <li class="li_foot">
-                                          <ul class="foot_li">
-                                              <li class="foot_time">2017-05-23</li>
-                                              <li class="foot_acter">作者：雷公</li>
-                                              <li class="foot_pin">评论：80</li>
-                                              <li class="foot_look">浏览：10000000</li>
-                                              <li class="foot_class">程序开发</li>
-                                          </ul>
-                                      </li>
-                                  </ul>
-                               </div>
-                            </div>
-                        </li>
-                        <li class="action_list">
-                            <div class="list_cenetr clear">
-                               <div class="in_img"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
-                               <div class="in_body">
-                                  <ul>
-                                      <li class="li_tit"><a href="">thinkphp点击图片刷新验证码</a></li>
-                                      <li class="li_body">
-                                      本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候
-                                      </li>
-                                      <li class="li_foot">
-                                          <ul class="foot_li">
-                                              <li class="foot_time">2017-05-23</li>
-                                              <li class="foot_acter">作者：雷公</li>
-                                              <li class="foot_pin">评论：80</li>
-                                              <li class="foot_look">浏览：10000000</li>
-                                              <li class="foot_class">程序开发</li>
-                                          </ul>
-                                      </li>
-                                  </ul>
-                               </div>
-                            </div>
-                        </li>
-                        <li class="action_list">
-                            <div class="list_cenetr clear">
-                               <div class="in_img"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
-                               <div class="in_body">
-                                  <ul>
-                                      <li class="li_tit"><a href="">thinkphp点击图片刷新验证码</a></li>
-                                      <li class="li_body">
-                                      本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候
-                                      </li>
-                                      <li class="li_foot">
-                                          <ul class="foot_li">
-                                              <li class="foot_time">2017-05-23</li>
-                                              <li class="foot_acter">作者：雷公</li>
-                                              <li class="foot_pin">评论：80</li>
-                                              <li class="foot_look">浏览：10000000</li>
-                                              <li class="foot_class">程序开发</li>
-                                          </ul>
-                                      </li>
-                                  </ul>
-                               </div>
-                            </div>
-                        </li>
-                        <li class="action_list">
-                            <div class="list_cenetr clear">
-                               <div class="in_img"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
-                               <div class="in_body">
-                                  <ul>
-                                      <li class="li_tit"><a href="">thinkphp点击图片刷新验证码</a></li>
-                                      <li class="li_body">
-                                      本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候
-                                      </li>
-                                      <li class="li_foot">
-                                          <ul class="foot_li">
-                                              <li class="foot_time">2017-05-23</li>
-                                              <li class="foot_acter">作者：雷公</li>
-                                              <li class="foot_pin">评论：80</li>
-                                              <li class="foot_look">浏览：10000000</li>
-                                              <li class="foot_class">程序开发</li>
-                                          </ul>
-                                      </li>
-                                  </ul>
-                               </div>
-                            </div>
-                        </li>
-                        <li class="action_list">
-                            <div class="list_cenetr clear">
-                               <div class="in_img"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
-                               <div class="in_body">
-                                  <ul>
-                                      <li class="li_tit"><a href="">thinkphp点击图片刷新验证码</a></li>
-                                      <li class="li_body">
-                                      本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候
-                                      </li>
-                                      <li class="li_foot">
-                                          <ul class="foot_li">
-                                              <li class="foot_time">2017-05-23</li>
-                                              <li class="foot_acter">作者：雷公</li>
-                                              <li class="foot_pin">评论：80</li>
-                                              <li class="foot_look">浏览：10000000</li>
-                                              <li class="foot_class">程序开发</li>
-                                          </ul>
-                                      </li>
-                                  </ul>
-                               </div>
-                            </div>
-                        </li>
-                        <li class="action_list">
-                            <div class="list_cenetr clear">
-                               <div class="in_img"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
-                               <div class="in_body">
-                                  <ul>
-                                      <li class="li_tit"><a href="">thinkphp点击图片刷新验证码</a></li>
-                                      <li class="li_body">
-                                      本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候
-                                      </li>
-                                      <li class="li_foot">
-                                          <ul class="foot_li">
-                                              <li class="foot_time">2017-05-23</li>
-                                              <li class="foot_acter">作者：雷公</li>
-                                              <li class="foot_pin">评论：80</li>
-                                              <li class="foot_look">浏览：10000000</li>
-                                              <li class="foot_class">程序开发</li>
-                                          </ul>
-                                      </li>
-                                  </ul>
-                               </div>
-                            </div>
-                        </li>
-                        <li class="action_list">
-                            <div class="list_cenetr clear">
-                               <div class="in_img"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
-                               <div class="in_body">
-                                  <ul>
-                                      <li class="li_tit"><a href="">thinkphp点击图片刷新验证码</a></li>
-                                      <li class="li_body">
-                                      本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候
-                                      </li>
-                                      <li class="li_foot">
-                                          <ul class="foot_li">
-                                              <li class="foot_time">2017-05-23</li>
-                                              <li class="foot_acter">作者：雷公</li>
-                                              <li class="foot_pin">评论：80</li>
-                                              <li class="foot_look">浏览：10000000</li>
-                                              <li class="foot_class">程序开发</li>
-                                          </ul>
-                                      </li>
-                                  </ul>
-                               </div>
-                            </div>
-                        </li>
-                        <li class="action_list">
-                            <div class="list_cenetr clear">
-                               <div class="in_img"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
-                               <div class="in_body">
-                                  <ul>
-                                      <li class="li_tit"><a href="">thinkphp点击图片刷新验证码</a></li>
-                                      <li class="li_body">
-                                      本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候本类验证码功能刷新功能，涉及到两个刷新，一个是点击验证码图片刷新，另一个是输错验证码刷新，thinkPHP框架里面内置了verify.class.php验证类，我们做验证码验证的时候
-                                      </li>
-                                      <li class="li_foot">
-                                          <ul class="foot_li">
-                                              <li class="foot_time">2017-05-23</li>
-                                              <li class="foot_acter">作者：雷公</li>
-                                              <li class="foot_pin">评论：80</li>
-                                              <li class="foot_look">浏览：10000000</li>
-                                              <li class="foot_class">程序开发</li>
-                                          </ul>
-                                      </li>
-                                  </ul>
-                               </div>
-                            </div>
-                        </li>
+                      </foreach>
                     </ul>
                 </div>
             </div>
