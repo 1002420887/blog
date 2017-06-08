@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class='index' lang="zh-CN">
+<head>
+<include file='Public:head'/>
+<link rel="stylesheet" type="text/css" href="__CSS__/index1.css" />
+<link rel="stylesheet" type="text/css" href="__CSS__/pamList.css" />
+</head> 
+<body id="body">
+    <include file="Public:newhd"/>
+    <div class="index_all">
+        <div class="all_center clear">
+            <div class="cenetr_right">
+                <include file="Public:right"/>
+            </div>
+            <div class="cenetr_left">
+               <div class="Info_center">
+                  <div class="center_l">
+                    <div class="info_title">{$info['title']}</div>
+                    <div class="info_oter">
+                        <ul class="oter_ul clear" >
+                            <li><a title="发表时间：{$v['time']|date="Y-m-d",###}"><i class="Hui-iconfont">&#xe690;</i> {$info['time']|date="Y-m-d",###}</a></li>
+                            <li><a><i class="Hui-iconfont">&#xe697;</i> {$info['zan']}赞</a></li>
+                            <li><a><i class="Hui-iconfont">&#xe622;</i> {$info['cnum']}评论</a></li>
+                            <li><a><i class="Hui-iconfont">&#xe725;</i> {$info['rnum']}次</a></li>
+                        </ul>
+                    </div>
+                    <div class="info_body">
+                        {$info['content']}
+                    </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <include file="Public:footer"/>
+</body>
+<script type="text/javascript">
+
+</script>
+ 

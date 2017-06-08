@@ -24,6 +24,7 @@
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 <link rel="stylesheet" type="text/css" href="/Home/View/Public/Css/index1.css" />
+<link rel="stylesheet" type="text/css" href="/Home/View/Public/Css/pamList.css" />
 </head> 
 <body id="body">
     <?php  $tuid = session("bkHmUser.uid"); ?>
@@ -203,14 +204,14 @@
             <div class="cenetr_left">
                 <!-- <div class="bg_lun"></div> -->
                 <div class="action">
-                    <h4 class="action_title"><a>热门文章</a></h4>
+                    <h4 class="action_title"><a>列表 > <span class="list_page">程序开发</span></a></h4>
                     <ul class="ulOns">
                     <?php if(is_array($list)): foreach($list as $key=>$v): ?><li class="action_list">
                             <div class="list_cenetr clear">
                                <div class="in_img"><img src="/Home/View/Public/img/index/2017032858da05cfe46e8.jpg"/></div>
                                <div class="in_body">
                                   <ul>
-                                      <li class="li_tit"><a href="<?php echo U('Program/pamInfo','pm='.$v['id']);?>"><?php echo ($v['title']); ?></a></li>
+                                      <li class="li_tit"><a href=""><?php echo ($v['title']); ?></a></li>
                                       <li class="li_body">
                                       <?php echo ($v['content']); ?>
                                       </li>

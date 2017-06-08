@@ -24,6 +24,7 @@
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 <link rel="stylesheet" type="text/css" href="/Home/View/Public/Css/index1.css" />
+<link rel="stylesheet" type="text/css" href="/Home/View/Public/Css/pamList.css" />
 </head> 
 <body id="body">
     <?php  $tuid = session("bkHmUser.uid"); ?>
@@ -201,34 +202,22 @@
 </div>
             </div>
             <div class="cenetr_left">
-                <!-- <div class="bg_lun"></div> -->
-                <div class="action">
-                    <h4 class="action_title"><a>热门文章</a></h4>
-                    <ul class="ulOns">
-                    <?php if(is_array($list)): foreach($list as $key=>$v): ?><li class="action_list">
-                            <div class="list_cenetr clear">
-                               <div class="in_img"><img src="/Home/View/Public/img/index/2017032858da05cfe46e8.jpg"/></div>
-                               <div class="in_body">
-                                  <ul>
-                                      <li class="li_tit"><a href="<?php echo U('Program/pamInfo','pm='.$v['id']);?>"><?php echo ($v['title']); ?></a></li>
-                                      <li class="li_body">
-                                      <?php echo ($v['content']); ?>
-                                      </li>
-                                      <li class="li_foot">
-                                          <ul class="foot_li">
-                                              <li class="foot_time"><i class="Hui-iconfont">&#xe690;</i> <?php echo (date("Y-m-d",$v['time'])); ?></li>
-                                              <li class="foot_acter"><i class="Hui-iconfont">&#xe697;</i> <?php echo ($v['zan']); ?>赞</li>
-                                              <li class="foot_pin"><i class="Hui-iconfont">&#xe622;</i> <a href=""><?php echo ($v['cnum']); ?>评论</a></li>
-                                              <li class="foot_look"><i class="Hui-iconfont">&#xe725;</i> <?php echo ($v['rnum']); ?>次</li>
-                                              <li class="foot_class"><?php echo ($v['name']); ?></li>
-                                          </ul>
-                                      </li>
-                                  </ul>
-                               </div>
-                            </div>
-                        </li><?php endforeach; endif; ?>
-                    </ul>
-                </div>
+               <div class="Info_center">
+                  <div class="center_l">
+                    <div class="info_title"><?php echo ($info['title']); ?></div>
+                    <div class="info_oter">
+                        <ul class="oter_ul clear" >
+                            <li><a title="发表时间：<?php echo (date("Y-m-d",$v['time'])); ?>"><i class="Hui-iconfont">&#xe690;</i> <?php echo (date("Y-m-d",$info['time'])); ?></a></li>
+                            <li><a><i class="Hui-iconfont">&#xe697;</i> <?php echo ($info['zan']); ?>赞</a></li>
+                            <li><a><i class="Hui-iconfont">&#xe622;</i> <?php echo ($info['cnum']); ?>评论</a></li>
+                            <li><a><i class="Hui-iconfont">&#xe725;</i> <?php echo ($info['rnum']); ?>次</a></li>
+                        </ul>
+                    </div>
+                    <div class="info_body">
+                        <?php echo ($info['content']); ?>
+                    </div>
+                  </div>
+               </div>
             </div>
         </div>
     </div>
