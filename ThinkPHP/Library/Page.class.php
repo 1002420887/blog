@@ -39,7 +39,7 @@ class Page{
 	 * @return [type] [分页展示连接]
 	 */
 	function show(){
-
+		return 1;
 		//总页数
 		$pages = ceil($this->num/$this->nums);
 		$this->pages = $pages;

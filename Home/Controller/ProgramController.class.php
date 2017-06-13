@@ -26,7 +26,7 @@ class ProgramController extends Controller{
 		$field = 'b.*,c.name';
 		$order = 'b.id desc';
 		$list  = $data->sel($where,15,$field,$order);
-		// var_dump($list);
+		// var_dump($list['page']);
 		$this->assign('cid',$cid);
 		$this->assign('uid',$uid);
 		$this->assign('list',$list['list']);

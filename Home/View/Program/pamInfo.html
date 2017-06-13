@@ -15,19 +15,52 @@
             <div class="cenetr_left">
                <div class="Info_center">
                   <div class="center_l">
-                    <div class="info_title">{$info['title']}</div>
-                    <div class="info_oter">
-                        <ul class="oter_ul clear" >
-                            <li><a title="发表时间：{$v['time']|date="Y-m-d",###}"><i class="Hui-iconfont">&#xe690;</i> {$info['time']|date="Y-m-d",###}</a></li>
-                            <li><a><i class="Hui-iconfont">&#xe697;</i> {$info['zan']}赞</a></li>
-                            <li><a><i class="Hui-iconfont">&#xe622;</i> {$info['cnum']}评论</a></li>
-                            <li><a><i class="Hui-iconfont">&#xe725;</i> {$info['rnum']}次</a></li>
-                        </ul>
-                    </div>
-                    <div class="info_body">
-                        {$info['content']}
-                    </div>
+                        <div class="info_title">{$info['title']}</div>
+                        <div class="info_oter">
+                            <ul class="oter_ul clear" >
+                                <li><a title="发表时间：{$v['time']|date="Y-m-d",###}"><i class="Hui-iconfont">&#xe690;</i> {$info['time']|date="Y-m-d",###}</a></li>
+                                <li><a><i class="Hui-iconfont">&#xe697;</i> {$info['zan']}赞</a></li>
+                                <li><a><i class="Hui-iconfont">&#xe622;</i> {$info['cnum']}评论</a></li>
+                                <li><a><i class="Hui-iconfont">&#xe725;</i> {$info['rnum']}次</a></li>
+                            </ul>
+                        </div>
+                        <div class="info_body">
+                            {$info['content']}
+                        </div>
+                        <div class="info_fz clear">
+                            <button class="dashang">打赏</button>
+                            <button class="fenxiang">分享</button>
+                        </div>
                   </div>
+
+               </div>
+               <div class="naxt_center">
+                   <div class="naxt_l_cewn">
+                       <div class="tet">评论留言</div>
+                       <div class="orter_pl">
+                           <ul>
+                               <li>
+                                    <div class="name_pl"><span class="name">錵艺</span></div>
+                                    <div class="pl_body">
+                                        扫附近的卢萨卡几点开两三点。冻死了富士康节食减肥。分么股份地接口的的首付款独守空房当牲口。大方公开分单联开关更符合客观方面会徕木股份公开规范(*/ω＼*)
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="name_pl">錵艺：</div>
+                                    <div class="pl_body">
+                                        扫附近的卢萨卡几点开两三点。冻死了富士康节食减肥。分么股份地接口的的首付款独守空房当牲口。大方公开分单联开关更符合客观方面会徕木股份公开规范(*/ω＼*)
+                                    </div>
+                                </li>
+                           </ul>
+                       </div>
+                       <div class="text">
+                           <textarea placeholder="输入文字进行评论"></textarea>
+                       </div>
+                       <div class="add_pl clear">
+                           <button>评论</button>
+                       </div>
+                   </div>
+
                </div>
             </div>
         </div>

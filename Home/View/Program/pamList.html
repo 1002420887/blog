@@ -23,7 +23,7 @@
                                <div class="in_img"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
                                <div class="in_body">
                                   <ul>
-                                      <li class="li_tit"><a href="">{$v['title']}</a></li>
+                                      <li class="li_tit"><a href="{:U('Program/pamInfo','pm='.$v['id'])}">{$v['title']}</a></li>
                                       <li class="li_body">
                                       {$v['content']}
                                       </li>
@@ -41,6 +41,7 @@
                             </div>
                         </li>
                       </foreach>
+                        <li class="pages">{$page}</li>
                     </ul>
                 </div>
             </div>
