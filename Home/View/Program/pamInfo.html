@@ -39,25 +39,42 @@
                        <div class="tet">评论留言</div>
                        <div class="orter_pl">
                            <ul>
-                               <li>
-                                    <div class="name_pl"><span class="name">錵艺</span></div>
-                                    <div class="pl_body">
-                                        扫附近的卢萨卡几点开两三点。冻死了富士康节食减肥。分么股份地接口的的首付款独守空房当牲口。大方公开分单联开关更符合客观方面会徕木股份公开规范(*/ω＼*)
+                           <foreach name="pl" item="v">
+                               <li class="clear">
+                                    <div class="name_pl"><span class="name">{$v['uname']}</span><span class="pl_time">2017-06-14 12:45:06</span><a class="huifu">回复</a></div>
+                                    <div class="pl_body clear">
+                                        <div class="pl_toux"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
+                                        <div class="b_bodys">
+                                        {$v[body]}
+                                        </div>
+                                        
                                     </div>
+                                    <ul class="pl_hui">
+                                    <!-- <foreach name="ph" item="h">
+                                    <if condition='$h[''] eq 0'>
+                                        <li>
+                                            <div class="name_pl"><span class="name">辛巴死士</span><span class="pl_time">2017-06-14 12:45:06</span><a class="huifu">回复</a></div>
+                                            <div class="pl_body clear">
+                                                <div class="pl_toux"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
+                                                <div class="b_bodys"><a href="">回复 <span>錵艺</span>：</a>
+                                                扫附近的卢萨卡几点开两三点。冻死了富士康节食减肥。分么股份地接口的的首付款独守空房当牲口。大方公开分单联开关更符合客观方面会徕木股份公开规范(*/ω＼*)
+                                                扫附近的卢萨卡几点开两三点。冻死了富士康节食减肥。分么股份地接口的的首付款独守空房当牲口。大方公开分单联开关更符合客观方面会徕木股份公开规范(*/ω＼*)
+                                                扫附近的卢萨卡几点开两三点。冻死了富士康节食减肥。分么股份地接口的的首付款独守空房当牲口。大方公开分单联开关更符合客观方面会徕木股份公开规范(*/ω＼*)
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
+                                    </foreach> -->
+                                    </ul>
                                 </li>
-                                <li>
-                                    <div class="name_pl">錵艺：</div>
-                                    <div class="pl_body">
-                                        扫附近的卢萨卡几点开两三点。冻死了富士康节食减肥。分么股份地接口的的首付款独守空房当牲口。大方公开分单联开关更符合客观方面会徕木股份公开规范(*/ω＼*)
-                                    </div>
-                                </li>
+                            </foreach>
                            </ul>
                        </div>
                        <div class="text">
-                           <textarea placeholder="输入文字进行评论"></textarea>
+                           <textarea placeholder="输入文字进行评论" name="body"></textarea>
                        </div>
                        <div class="add_pl clear">
-                           <button>评论</button>
+                           <button id="add_rw">评论</button>
                        </div>
                    </div>
 
@@ -68,6 +85,24 @@
     <include file="Public:footer"/>
 </body>
 <script type="text/javascript">
-
+$("#add_rw").on('click',function(){
+    var body=$("textarea[name='body']").val();
+    var id = {$info['id']};
+    if(body ==""){
+        layer.msg('请输入评论内容！'); return false;
+    }
+    $.post('{:U("Program/addRw")}',{by:body,id:id},function(e){
+            if(e.r == 1){
+                layer.msg('请先登陆！'); return false;
+            }else if(e.r == 2){
+                layer.msg('请选择评论文章！'); return false;
+            }else if(e.r == 101){
+                layer.msg('评论失败！'); return false;
+            }else if(e.r == 100){
+                layer.msg('评论成功！');
+                location.reload();
+            }
+    },'json');
+});
 </script>
  

@@ -45,10 +45,53 @@ class ProgramController extends Controller{
 				->join("LEFT JOIN __USER_CLA__ c ON b.fid=c.id")
 				->where($where)
 				->find();
+			$rw['r.bid']=$id;
+			$rw['r.type']=1;
+			$pl = M('review')
+				->field("r.*,u.uname")
+				->alias("r")
+				->join("LEFT JOIN __USER__ u ON r.uid=u.uid")
+				->where($rw)
+				->select();
+			$rh['r.bid']=$id;
+			$rh['r.type']=2;
+			$ph = M('review')
+				->field("r.*,u.uname")
+				->alias("r")
+				->join("LEFT JOIN __USER__ u ON r.uid=u.uid")
+				->where($rh)
+				->select();
+			$this->assign('ph',$ph);
+			$this->assign('pl',$pl);
 			$this->assign('info',$info);
 			$this->display();
 		}
 		
+	}
+	public function addRw(){
+		if(IS_POST && I('post.by') && I('post.id')){
+			$uid = (int)session("bkHmUser.uid");
+
+			if(!$uid){
+				exit(json_encode(array('r'=>1)));
+			}
+			if(!$uid){
+				exit(json_encode(array('r'=>2)));
+			}
+			$id=I('post.id');
+			$body=I('post.by');
+			$arr['body']=$body;
+			$arr['uid']=$uid;
+			$arr['addtime']=time();
+			$arr['type']=1;
+			$arr['bid']=$id;
+			$add = M('review')->add($arr);
+			if(!$add){
+				exit(json_encode(array('r'=>101)));
+			}
+			exit(json_encode(array('r'=>100)));
+
+		}
 	}
 
 

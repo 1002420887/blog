@@ -162,16 +162,69 @@
 .name_pl{
 	/*border:1px solid #f00;*/
 	padding: 3px 5px;
-	background: #eee;
+	background: #ccc;
 }
 .name_pl .name{
 	color:#13C5F8;
 }
 .pl_body{
-	color:#888;
+	color:#666;
 	padding: 5px;
 }
 .orter_pl ul li{
 	margin-top: 10px;
-	border:1px solid #eee;
+	border:1px solid #ccc;
+}
+.pl_toux{
+	float: left;
+	/*border:1px solid #F00;*/
+	width: 40px;height: 40px;
+}
+.pl_toux img{
+	width: 40px;
+	height:40px;
+}
+.pl_time{
+	margin-left: 5px;
+	color:#aaa;
+}
+.b_bodys{
+	margin-left: 10px;
+	/*border:1px solid #0f0;*/
+	float: right;
+	width: 93%;
+}
+.pl_hui{
+	/*border:1px solid #f00;*/
+	width: 92%;
+	float: right;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	
+}
+.pl_hui .pl_body{
+	background: #E1DDDD;
+}
+
+.pl_hui .b_bodys{
+	/*border:1px solid #f00;*/
+	float: right;
+	width: 92%;
+	
+}
+.pl_hui .b_bodys a{
+	color:#FF6700;
+	text-decoration: none;
+}
+.pl_hui .b_bodys a span{
+	color:#13C5F8;
+}
+.pl_hui .pl_toux{
+	/*border:1px solid #0f0;*/
+	float: left;
+}
+.huifu{
+	font-size: 12px;
+	margin-left: 5px;
+	color:#6CC7FF;
 }
