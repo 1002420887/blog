@@ -41,30 +41,29 @@
                            <ul>
                            <foreach name="pl" item="v">
                                <li class="clear">
-                                    <div class="name_pl"><span class="name">{$v['uname']}</span><span class="pl_time">2017-06-14 12:45:06</span><a class="huifu">回复</a></div>
+                                    <div class="name_pl"><span class="name">{$v['name']}</span><span class="pl_time">{$v['addtime']|date="Y-m-d H:i:s",###}</span><a class="huifu">回复</a></div>
                                     <div class="pl_body clear">
                                         <div class="pl_toux"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
                                         <div class="b_bodys">
-                                        {$v[body]}
+                                            {$v[body]}
                                         </div>
                                         
                                     </div>
                                     <ul class="pl_hui">
-                                    <!-- <foreach name="ph" item="h">
-                                    <if condition='$h[''] eq 0'>
+                                    <foreach name="ph" item="h">
+                                    <if condition='$h["rid"] eq $v["id"]'>
                                         <li>
-                                            <div class="name_pl"><span class="name">辛巴死士</span><span class="pl_time">2017-06-14 12:45:06</span><a class="huifu">回复</a></div>
+                                            <div class="name_pl"><span class="name">{$h['name']}</span><span class="pl_time">{$h['addtime']|date="Y-m-d H:i:s",###}</span><a class="huifu">回复</a></div>
                                             <div class="pl_body clear">
                                                 <div class="pl_toux"><img src="__IMG__/index/2017032858da05cfe46e8.jpg"/></div>
-                                                <div class="b_bodys"><a href="">回复 <span>錵艺</span>：</a>
-                                                扫附近的卢萨卡几点开两三点。冻死了富士康节食减肥。分么股份地接口的的首付款独守空房当牲口。大方公开分单联开关更符合客观方面会徕木股份公开规范(*/ω＼*)
-                                                扫附近的卢萨卡几点开两三点。冻死了富士康节食减肥。分么股份地接口的的首付款独守空房当牲口。大方公开分单联开关更符合客观方面会徕木股份公开规范(*/ω＼*)
-                                                扫附近的卢萨卡几点开两三点。冻死了富士康节食减肥。分么股份地接口的的首付款独守空房当牲口。大方公开分单联开关更符合客观方面会徕木股份公开规范(*/ω＼*)
+                                                <div class="b_bodys"><a href="">回复 <span>{$h['h']}</span>：</a>
+                                                    {$h['body']}
                                                 </div>
                                                 
                                             </div>
                                         </li>
-                                    </foreach> -->
+                                    </if>
+                                    </foreach>
                                     </ul>
                                 </li>
                             </foreach>

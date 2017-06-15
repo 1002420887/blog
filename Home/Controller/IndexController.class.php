@@ -13,9 +13,9 @@ class IndexController extends Controller{
 		// $where['uid']=array('eq',$uid);
 		//数据列表
 		// $where = 'del = 0';
-		$where= $uid  ? 'b.uid = '.$uid : '';
-		// $where['b.uid']=array('eq',$uid);
-		$where .= $cid  ? ' and FIND_IN_SET('.$cid.',b.pid)' : '' ;
+		// $where= $uid  ? 'b.uid = '.$uid : '';
+		// // $where['b.uid']=array('eq',$uid);
+		// $where .= $cid  ? ' and FIND_IN_SET('.$cid.',b.pid)' : '' ;
 		
 		$field = 'b.*,c.name';
 		$order = 'b.id desc';
@@ -38,9 +38,9 @@ class IndexController extends Controller{
 		// $where['uid']=array('eq',$uid);
 		//数据列表
 		// $where = 'del = 0';
-		$where= $uid  ? 'b.uid = '.$uid : '';
-		// $where['b.uid']=array('eq',$uid);
-		$where .= $cid  ? ' and FIND_IN_SET('.$cid.',b.pid)' : '' ;
+		// $where= $uid  ? 'b.uid = '.$uid : '';
+		// // $where['b.uid']=array('eq',$uid);
+		// $where .= $cid  ? ' and FIND_IN_SET('.$cid.',b.pid)' : '' ;
 		
 		$field = 'b.*,c.name';
 		$order = 'b.id desc';

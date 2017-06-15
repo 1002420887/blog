@@ -19,9 +19,9 @@ class ProgramController extends Controller{
 		// $where['uid']=array('eq',$uid);
 		//数据列表
 		// $where = 'del = 0';
-		$where= $uid  ? 'b.uid = '.$uid : '';
-		// $where['b.uid']=array('eq',$uid);
-		$where .= $cid  ? ' and FIND_IN_SET('.$cid.',b.pid)' : '' ;
+		// $where= $uid  ? 'b.uid = '.$uid : '';
+		// // $where['b.uid']=array('eq',$uid);
+		// $where .= $cid  ? ' and FIND_IN_SET('.$cid.',b.pid)' : '' ;
 		
 		$field = 'b.*,c.name';
 		$order = 'b.id desc';
@@ -37,6 +37,7 @@ class ProgramController extends Controller{
 	public function pamInfo(){
 		if(I('get.pm')){
 			$id=I('get.pm');
+			//文章查询
 			$where['b.id']=array('eq',$id);
 			$info = M('blog')
 				->field("b.*,c.name")
@@ -45,20 +46,21 @@ class ProgramController extends Controller{
 				->join("LEFT JOIN __USER_CLA__ c ON b.fid=c.id")
 				->where($where)
 				->find();
+			//评论查询
 			$rw['r.bid']=$id;
-			$rw['r.type']=1;
 			$pl = M('review')
-				->field("r.*,u.uname")
+				->field("r.*,u.name")
 				->alias("r")
 				->join("LEFT JOIN __USER__ u ON r.uid=u.uid")
 				->where($rw)
 				->select();
+			//回复查询
 			$rh['r.bid']=$id;
-			$rh['r.type']=2;
-			$ph = M('review')
-				->field("r.*,u.uname")
+			$ph = M('reply')
+				->field("r.*,u.name name,h.name h")
 				->alias("r")
 				->join("LEFT JOIN __USER__ u ON r.uid=u.uid")
+				->join("LEFT JOIN __USER__ h ON r.h_uid=h.uid")
 				->where($rh)
 				->select();
 			$this->assign('ph',$ph);

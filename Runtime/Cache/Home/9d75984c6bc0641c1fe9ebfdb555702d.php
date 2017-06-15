@@ -229,28 +229,25 @@
                        <div class="orter_pl">
                            <ul>
                            <?php if(is_array($pl)): foreach($pl as $key=>$v): ?><li class="clear">
-                                    <div class="name_pl"><span class="name"><?php echo ($v['uname']); ?></span><span class="pl_time">2017-06-14 12:45:06</span><a class="huifu">回复</a></div>
+                                    <div class="name_pl"><span class="name"><?php echo ($v['name']); ?></span><span class="pl_time"><?php echo (date("Y-m-d H:i:s",$v['addtime'])); ?></span><a class="huifu">回复</a></div>
                                     <div class="pl_body clear">
                                         <div class="pl_toux"><img src="/Home/View/Public/img/index/2017032858da05cfe46e8.jpg"/></div>
                                         <div class="b_bodys">
-                                        <?php echo ($v[body]); ?>
+                                            <?php echo ($v[body]); ?>
                                         </div>
                                         
                                     </div>
                                     <ul class="pl_hui">
-                                    <!-- <?php if(is_array($ph)): foreach($ph as $key=>$h): ?><if condition='$h[''] eq 0'>
-                                        <li>
-                                            <div class="name_pl"><span class="name">辛巴死士</span><span class="pl_time">2017-06-14 12:45:06</span><a class="huifu">回复</a></div>
+                                    <?php if(is_array($ph)): foreach($ph as $key=>$h): if($h["rid"] == $v["id"]): ?><li>
+                                            <div class="name_pl"><span class="name"><?php echo ($h['name']); ?></span><span class="pl_time"><?php echo (date("Y-m-d H:i:s",$h['addtime'])); ?></span><a class="huifu">回复</a></div>
                                             <div class="pl_body clear">
                                                 <div class="pl_toux"><img src="/Home/View/Public/img/index/2017032858da05cfe46e8.jpg"/></div>
-                                                <div class="b_bodys"><a href="">回复 <span>錵艺</span>：</a>
-                                                扫附近的卢萨卡几点开两三点。冻死了富士康节食减肥。分么股份地接口的的首付款独守空房当牲口。大方公开分单联开关更符合客观方面会徕木股份公开规范(*/ω＼*)
-                                                扫附近的卢萨卡几点开两三点。冻死了富士康节食减肥。分么股份地接口的的首付款独守空房当牲口。大方公开分单联开关更符合客观方面会徕木股份公开规范(*/ω＼*)
-                                                扫附近的卢萨卡几点开两三点。冻死了富士康节食减肥。分么股份地接口的的首付款独守空房当牲口。大方公开分单联开关更符合客观方面会徕木股份公开规范(*/ω＼*)
+                                                <div class="b_bodys"><a href="">回复 <span><?php echo ($h['h']); ?></span>：</a>
+                                                    <?php echo ($h['body']); ?>
                                                 </div>
                                                 
                                             </div>
-                                        </li><?php endforeach; endif; ?> -->
+                                        </li><?php endif; endforeach; endif; ?>
                                     </ul>
                                 </li><?php endforeach; endif; ?>
                            </ul>

@@ -1,0 +1,1283 @@
+[ 2017-06-15T10:13:41+08:00 ] 127.0.0.1 /index/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 220 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 221 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 222 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 220 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 221 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 222 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 220 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 221 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 222 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 220 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 221 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 222 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 220 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 221 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:13:41+08:00 ] 127.0.0.1 /index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-06-15T10:13:44+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0030s ]
+SQL: SELECT r.*,u.uname FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5' AND r.type = 1  [ RunTime:0.0000s ]
+SQL: SELECT r.*,u.uname FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5' AND r.type = 2  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:13:44+08:00 ] 127.0.0.1 /Program/pamInfo/pm/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-15T10:34:33+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0020s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0020s ]
+SQL: SELECT r.*,u.uname FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0020s ]
+SQL: SELECT r.*,u.uname,h.uname hname FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-15T10:35:10+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0060s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0020s ]
+SQL: SELECT r.*,u.uname FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0020s ]
+SQL: SELECT r.*,u.uname,h.uname hname FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:36:34+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0060s ]
+SQL: SELECT r.*,u.uname FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0020s ]
+SQL: SELECT r.*,u.uname name,h.uname hname FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+NOTIC: [8] Undefined index: uname D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:36:51+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0040s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0020s ]
+SQL: SELECT r.*,u.uname FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0020s ]
+SQL: SELECT r.*,u.uname name,h.uname hname FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-15T10:37:39+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0070s ]
+SQL: SELECT r.*,u.uname FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0060s ]
+SQL: SELECT r.*,u.uname name,h.uname h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:38:12+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0080s ]
+SQL: SELECT r.*,u.uname FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0030s ]
+SQL: SELECT r.*,u.uname name,h.uname h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:38:48+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0040s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0090s ]
+SQL: SELECT r.*,u.uname FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0040s ]
+SQL: SELECT r.*,u.uname name,h.uname h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=h.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:38:57+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0060s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0020s ]
+SQL: SELECT r.*,u.uname FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0030s ]
+SQL: SELECT r.*,u.uname name,h.uname h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=h.uid  WHERE r.bid = '5'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:40:10+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0060s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0030s ]
+SQL: SELECT r.*,u.uname FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0040s ]
+SQL: SELECT r.*,u.uname name,h.uname h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=h.uid  WHERE r.bid = '5'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-06-15T10:41:19+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0040s ]
+SQL: SELECT r.*,u.name FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0020s ]
+SQL: SELECT r.*,u.name name,h.name h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=h.uid  WHERE r.bid = '5'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Undefined index: uname D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 232 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:41:37+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0040s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0040s ]
+SQL: SELECT r.*,u.name FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0050s ]
+SQL: SELECT r.*,u.name name,h.name h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=h.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:42:32+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0040s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0030s ]
+SQL: SELECT r.*,u.name FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0020s ]
+SQL: SELECT r.*,u.name name,h.name h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=h.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:43:46+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0070s ]
+SQL: SELECT r.*,u.name FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0060s ]
+SQL: SELECT r.*,u.name name,h.name h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=h.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:46:05+08:00 ] 127.0.0.1 /Program/addRw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:46:09+08:00 ] 127.0.0.1 /Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-06-15T10:46:32+08:00 ] 127.0.0.1 /Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sime_user` WHERE ( uname = "183113877279" and pwd = "e10adc3949ba59abbe56e057f20f883e" ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pname D:\work\bk\blog\Home\Controller\LoginController.class.php 第 27 行.
+SQL: SELECT `this_login` FROM `sime_user` WHERE ( uid = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sime_user` SET `uname`='183113877279',`pwd`='e10adc3949ba59abbe56e057f20f883e',`last_login`=NULL,`last_ip`='127.0.0.1',`this_login`='2017' WHERE ( uid = 1 ) [ RunTime:0.0030s ]
+
+[ 2017-06-15T10:46:33+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0030s ]
+SQL: SELECT r.*,u.name FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0050s ]
+SQL: SELECT r.*,u.name name,h.name h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=h.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:46:51+08:00 ] 127.0.0.1 /Program/addRw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0030s ]
+SQL: INSERT INTO `sime_review` (`body`,`uid`,`addtime`,`type`,`bid`) VALUES ('这是测试，不要在意啊。老铁们','1','1497494811','1','5') [ RunTime:0.0010s ]
+
+[ 2017-06-15T10:46:51+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0060s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0020s ]
+SQL: SELECT r.*,u.name FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0070s ]
+SQL: SELECT r.*,u.name name,h.name h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=h.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T10:48:26+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0050s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0060s ]
+SQL: SELECT r.*,u.name FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0030s ]
+SQL: SELECT r.*,u.name name,h.name h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=h.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T11:05:11+08:00 ] 127.0.0.1 /Program/pamList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T11:05:11+08:00 ] 127.0.0.1 /Program/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T11:05:15+08:00 ] 127.0.0.1 /Program/pamList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T11:05:17+08:00 ] 127.0.0.1 /Program/pamList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-15T11:05:18+08:00 ] 127.0.0.1 /Program/pamList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-15T11:05:20+08:00 ] 127.0.0.1 /Index/index1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-15T11:05:20+08:00 ] 127.0.0.1 /Index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-15T11:05:25+08:00 ] 127.0.0.1 /Program/pamList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T11:05:37+08:00 ] 127.0.0.1 /Index/index1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-15T11:06:54+08:00 ] 127.0.0.1 /Program/pamList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-15T11:06:57+08:00 ] 127.0.0.1 /Login/loginOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T11:06:57+08:00 ] 127.0.0.1 /Program/pamList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-06-15T11:07:57+08:00 ] 127.0.0.1 /Program/pamList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-06-15T11:07:58+08:00 ] 127.0.0.1 /Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T11:08:04+08:00 ] 127.0.0.1 /Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sime_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sime_user` WHERE ( uname = "183113877279" and pwd = "e10adc3949ba59abbe56e057f20f883e" ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pname D:\work\bk\blog\Home\Controller\LoginController.class.php 第 27 行.
+SQL: SELECT `this_login` FROM `sime_user` WHERE ( uid = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sime_user` SET `uname`='183113877279',`pwd`='e10adc3949ba59abbe56e057f20f883e',`last_login`='2017',`last_ip`='127.0.0.1',`this_login`='2017' WHERE ( uid = 1 ) [ RunTime:0.0020s ]
+
+[ 2017-06-15T11:08:04+08:00 ] 127.0.0.1 /Program/pamList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T11:08:06+08:00 ] 127.0.0.1 /Program/pamList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-15T11:08:09+08:00 ] 127.0.0.1 /Index/index1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T11:09:27+08:00 ] 127.0.0.1 /Index/index1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: where D:\work\bk\blog\Home\Controller\IndexController.class.php 第 47 行.
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 220 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 221 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 222 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 220 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 221 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 222 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 220 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 221 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 222 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 220 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 221 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 222 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 220 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 221 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\f834e24e74a595cd6185e97e17f0a8d0.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-15T11:09:29+08:00 ] 127.0.0.1 /Program/pamList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE ( b.uid = 1 ) ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T11:09:40+08:00 ] 127.0.0.1 /Program/pamList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: where D:\work\bk\blog\Home\Controller\ProgramController.class.php 第 28 行.
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T11:09:44+08:00 ] 127.0.0.1 /Program/pamInfo/pm/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0020s ]
+SQL: SELECT r.*,u.name FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '1'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0030s ]
+SQL: SELECT r.*,u.name name,h.name h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=h.uid  WHERE r.bid = '1'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T11:09:50+08:00 ] 127.0.0.1 /Program/addRw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0060s ]
+SQL: INSERT INTO `sime_review` (`body`,`uid`,`addtime`,`type`,`bid`) VALUES ('66666666666666666666666','1','1497496190','1','1') [ RunTime:0.0000s ]
+
+[ 2017-06-15T11:09:50+08:00 ] 127.0.0.1 /Program/pamInfo/pm/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0030s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0060s ]
+SQL: SELECT r.*,u.name FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '1'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0030s ]
+SQL: SELECT r.*,u.name name,h.name h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=h.uid  WHERE r.bid = '1'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-15T15:22:13+08:00 ] 127.0.0.1 /Program/pamInfo/pm/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-15T15:22:16+08:00 ] 127.0.0.1 /Program/pamList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sime_user_cla` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: where D:\work\bk\blog\Home\Controller\ProgramController.class.php 第 28 行.
+SQL: SELECT COUNT(*) AS tp_count FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  ORDER BY b.id desc LIMIT 0,15   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 221 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 222 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\c14a7a325d9243185d9e41fa8d25cd21.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-15T15:22:17+08:00 ] 127.0.0.1 /Program/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-15T15:22:18+08:00 ] 127.0.0.1 /Program/pamInfo/pm/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sime_blog` [ RunTime:0.0050s ]
+SQL: SELECT b.*,c.name FROM sime_blog b LEFT JOIN sime_user u ON b.uid=u.uid LEFT JOIN sime_user_cla c ON b.fid=c.id  WHERE b.id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sime_review` [ RunTime:0.0030s ]
+SQL: SELECT r.*,u.name FROM sime_review r LEFT JOIN sime_user u ON r.uid=u.uid  WHERE r.bid = '5'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sime_reply` [ RunTime:0.0030s ]
+SQL: SELECT r.*,u.name name,h.name h FROM sime_reply r LEFT JOIN sime_user u ON r.uid=u.uid LEFT JOIN sime_user h ON r.h_uid=h.uid  WHERE r.bid = '5'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 210 行.
+NOTIC: [8] Undefined index: zan D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 211 行.
+NOTIC: [8] Undefined index: cnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 212 行.
+NOTIC: [8] Undefined index: rnum D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 213 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+NOTIC: [8] Use of undefined constant body - assumed 'body' D:\work\bk\blog\Runtime\Cache\Home\9d75984c6bc0641c1fe9ebfdb555702d.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
